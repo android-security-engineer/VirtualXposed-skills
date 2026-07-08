@@ -195,6 +195,7 @@ export default withMermaid(
             { text: 'notification 通知服务', link: '/reference/server/notification' },
             { text: 'device 设备信息服务', link: '/reference/server/device' },
             { text: 'vs 虚拟存储服务', link: '/reference/server/vs' },
+            { text: 'secondary 次级服务', link: '/reference/server/secondary' },
             { text: 'ipc IPC 基建', link: '/reference/server/ipc' }
           ]
         },
