@@ -38,3 +38,11 @@ captures/
 
 # Keystore files
 *.jks
+
+# Website (VitePress)
+website/node_modules/
+website/.vitepress/dist/
+website/.vitepress/cache/
+
+# Claude Code
+.claude/skills/*/cache/
