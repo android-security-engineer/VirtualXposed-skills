@@ -119,6 +119,12 @@ export default withMermaid(
             { text: '本地构建', link: '/dev/build' },
             { text: '本文档站搭建', link: '/dev/docs-site' }
           ]
+        },
+        {
+          text: 'AI Agent 对接',
+          items: [
+            { text: 'Agent 对接说明', link: '/dev/for-agents' }
+          ]
         }
       ],
       '/reference/': [
