@@ -14,7 +14,7 @@ description: Navigate the VirtualXposed codebase and documentation. Use when the
 3. **源码本体**：`VirtualApp/lib/src/main/java/com/lody/virtual/` —— 细节核对读源码。
 4. **详细文档**：`website/reference/` 下对应模块 Markdown。
 
-## 三类工具操作
+## 四类工具操作
 
 ### 工具 A：按类名/服务名定位源码
 
@@ -37,6 +37,15 @@ description: Navigate the VirtualXposed codebase and documentation. Use when the
 2. 指引写标准 Xposed 模块（实现 `IXposedHookLoadPackage`）
 3. 提醒两大限制：不支持改系统、不支持资源 Hook
 4. 参考 `website/xposed/how-it-works` 与 `website/xposed/module-loading`
+
+### 工具 D：获取预编译 APK
+
+当用户问"怎么安装 VirtualXposed"、"下载 APK"、"不要从源码编译"：
+1. 说明 VirtualXposed 以 APK 形式分发，无需源码编译
+2. 提供下载命令：`gh release download --repo android-security-engineer/VirtualXposed-skills --pattern '*.apk' --dir .`
+3. 或指向 latest release 页面：`https://github.com/android-security-engineer/VirtualXposed-skills/releases/latest`
+4. 说明 APK 已签名、支持 arm64-v8a/x86_64、Android 5.0~10.0
+5. 若用户需从源码编译，指引 `/dev/build` 文档（含 jcenter 镜像、NDK r19c、keystore）
 
 ## 硬约束
 

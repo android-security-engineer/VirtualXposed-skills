@@ -51,3 +51,16 @@ MethodProxy → (Replace*MethodProxy | StaticMethodProxy | ResultStaticMethodPro
 - "VLocation 在哪" → llms-index.json 过滤 className=VLocation → remote 模块
 - "怎么 Hook 剪贴板" → 工具 B：proxies/clipboard + server + 全文第 4.2 节
 - "写个虚拟定位模块" → 工具 C：标准 Xposed 模块 + 两大限制提醒
+
+## 6. 预编译 APK 下载速查
+
+VirtualXposed 以 APK 分发，Agent 可直接下载无需编译：
+
+| 需求 | 命令/URL |
+|------|---------|
+| 下载最新 APK | `gh release download --repo android-security-engineer/VirtualXposed-skills --pattern '*.apk'` |
+| latest release 页面 | https://github.com/android-security-engineer/VirtualXposed-skills/releases/latest |
+| 源码编译文档 | /dev/build（jcenter 阿里云镜像 + NDK r19c + keystore 配置） |
+| CI 构建流水线 | .github/workflows/android.yml（构建）+ release.yml（tag 触发发布） |
+
+APK 已签名，arm64-v8a / x86_64，Android 5.0~10.0。versionName 0.22.0 / versionCode 220。
