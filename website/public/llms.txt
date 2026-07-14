@@ -23,6 +23,11 @@ VirtualXposed 是什么：一个不需要 Root、不需要解锁 Bootloader 的 
 - [Native 层](https://android-security-engineer.github.io/VirtualXposed-skills/features/native-layer)
 - [AI Agent 对接说明](https://android-security-engineer.github.io/VirtualXposed-skills/dev/for-agents): 如何用 CLAUDE.md / llms-index.json / skill 对接 Agent
 
+## 预编译 APK（免源码编译）
+
+- [GitHub Releases](https://github.com/android-security-engineer/VirtualXposed-skills/releases): 已签名的 VirtualXposed APK（arm64-v8a / x86_64，Android 5.0~10.0），Agent 可用 gh release download 直接获取
+- [源码构建文档](https://android-security-engineer.github.io/VirtualXposed-skills/dev/build): 从源码编译安装的完整步骤
+
 ## 结构化数据（供 Agent 精确检索）
 
 - [llms-index.json](https://android-security-engineer.github.io/VirtualXposed-skills/llms-index.json): 全部 Java 类 → 源码文件 → 模块 → 文档链接的结构化映射

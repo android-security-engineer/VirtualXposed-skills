@@ -59,6 +59,18 @@ Agent 可按 `className` / `package` / `module` 精确检索"某类在哪、属�
 
 该 skill **全部只读**——VirtualXposed 是 Xposed 模块运行容器，不是可编程 SDK，skill 不暴露任何写操作或臆造 API。
 
+## 第五层：预编译 APK 下载（Agent 获取可安装产物）
+
+VirtualXposed 以 **APK** 形式分发。Agent 无需从源码编译，可直接下载已签名的 Release：
+
+下载命令：`gh release download --repo android-security-engineer/VirtualXposed-skills --pattern '*.apk' --dir .`
+
+或直接请求 latest release URL：`https://github.com/android-security-engineer/VirtualXposed-skills/releases/latest`
+
+- APK 已签名，支持 arm64-v8a / x86_64，安装于 Android 5.0~10.0
+- 需从源码编译时见 [/dev/build](./build)（含 jcenter 镜像、NDK r19c、keystore 配置）
+- CI 流水线：`android.yml`（构建验证）+ `release.yml`（tag 触发发布）
+
 ## 快速对接清单
 
 ```mermaid
