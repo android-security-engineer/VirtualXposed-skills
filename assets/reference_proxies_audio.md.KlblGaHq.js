@@ -1,0 +1,22 @@
+import{_ as o,C as t,o as e,c as p,a2 as i,b as l,w as s,a as r,E as c,a3 as d}from"./chunks/framework.DZUUNQ77.js";const _=JSON.parse('{"title":"audio · 音频代理","description":"","frontmatter":{},"headers":[],"relativePath":"reference/proxies/audio.md","filePath":"reference/proxies/audio.md","lastUpdated":1784063681000}'),u={name:"reference/proxies/audio.md"};function E(h,a,A,m,B,C){const n=t("Mermaid");return e(),p("div",null,[a[1]||(a[1]=i(`<h1 id="audio-·-音频代理" tabindex="-1">audio · 音频代理 <a class="header-anchor" href="#audio-·-音频代理" aria-label="Permalink to &quot;audio · 音频代理&quot;">​</a></h1><div class="tip custom-block"><p class="custom-block-title">源码路径</p><p><a href="https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/audio/AudioManagerStub.java" target="_blank" rel="noreferrer"><code>src/main/java/com/lody/virtual/client/hook/proxies/audio/AudioManagerStub.java</code></a></p></div><p>拦截 <code>AudioManager</code>（音量/铃声/音频焦点）。把音频焦点请求、铃声查询等调用的 callingUid 替换为虚拟 UID，让虚拟 App 的音频焦点管理在虚拟身份下进行。</p><h2 id="拦截的服务" tabindex="-1">拦截的服务 <a class="header-anchor" href="#拦截的服务" aria-label="Permalink to &quot;拦截的服务&quot;">​</a></h2><p><code>Context.AUDIO_SERVICE</code>，继承 <code>BinderInvocationProxy</code>。</p><h2 id="关键行为" tabindex="-1">关键行为 <a class="header-anchor" href="#关键行为" aria-label="Permalink to &quot;关键行为&quot;">​</a></h2><p>UID/包名参数改写为主，配合 <code>VClientImpl</code> 的音频权限伪装（native 层 <code>AudioRecord.native_check_permission</code> 由 <code>VMPatch</code> 处理，见 <a href="./../../features/native-layer">Native 层</a>）。</p><h2 id="拦截方法清单" tabindex="-1">拦截方法清单 <a class="header-anchor" href="#拦截方法清单" aria-label="Permalink to &quot;拦截方法清单&quot;">​</a></h2><p>从源码 <code>onBindMethods</code> / <code>@Inject</code> 内部类提取的 MethodProxy 拦截点：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>- abandonAudioFocus</span></span>
+<span class="line"><span>- adjustLocalOrRemoteStreamVolume</span></span>
+<span class="line"><span>- adjustMasterVolume</span></span>
+<span class="line"><span>- adjustStreamVolume</span></span>
+<span class="line"><span>- adjustSuggestedStreamVolume</span></span>
+<span class="line"><span>- adjustVolume</span></span>
+<span class="line"><span>- avrcpSupportsAbsoluteVolume</span></span>
+<span class="line"><span>- disableSafeMediaVolume</span></span>
+<span class="line"><span>- registerRemoteControlClient</span></span>
+<span class="line"><span>- requestAudioFocus</span></span>
+<span class="line"><span>- setBluetoothScoOn</span></span>
+<span class="line"><span>- setMasterVolume</span></span>
+<span class="line"><span>- setMicrophoneMute</span></span>
+<span class="line"><span>- setMode</span></span>
+<span class="line"><span>- setRingerModeExternal</span></span>
+<span class="line"><span>- setRingerModeInternal</span></span>
+<span class="line"><span>- setSpeakerphoneOn</span></span>
+<span class="line"><span>- setStreamVolume</span></span>
+<span class="line"><span>- setWiredDeviceConnectionState</span></span>
+<span class="line"><span>- startBluetoothSco</span></span>
+<span class="line"><span>- stopBluetoothSco</span></span>
+<span class="line"><span>- unregisterAudioFocusClient</span></span></code></pre></div><h2 id="拦截与转发流程" tabindex="-1">拦截与转发流程 <a class="header-anchor" href="#拦截与转发流程" aria-label="Permalink to &quot;拦截与转发流程&quot;">​</a></h2>`,11)),(e(),l(d,null,{default:s(()=>[c(n,{id:"mermaid-33",class:"mermaid",graph:"flowchart%20LR%0A%20%20APP%5B%22%E7%9B%AE%E6%A0%87%20App%22%5D%20--%3E%7C%22%E8%B0%83%E7%94%A8%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%22%7C%20HOOK%5B%22MethodProxy%20%E6%8B%A6%E6%88%AA%3Cbr%2F%3E(audio%20%C2%B7%20%E9%9F%B3%E9%A2%91%E4%BB%A3%E7%90%86)%22%5D%0A%20%20HOOK%20--%3E%7C%22%E6%94%B9%E5%8C%85%E5%90%8D%2F%E5%8F%82%E6%95%B0%20%E6%88%96%20%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9E%22%7C%20DECIDE%7B%22%E9%9C%80%E8%A6%81%E8%99%9A%E6%8B%9F%E6%9C%8D%E5%8A%A1%3F%22%7D%0A%20%20DECIDE%20--%3E%7C%22%E6%98%AF%22%7C%20VSVC%5B%22server%20%E8%99%9A%E6%8B%9F%E6%9C%8D%E5%8A%A1%22%5D%0A%20%20DECIDE%20--%3E%7C%22%E5%90%A6%22%7C%20REAL%5B%22%E8%BD%AC%E5%8F%91%E7%9C%9F%E5%AE%9E%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1%22%5D%0A%20%20VSVC%20--%3E%20APP%0A%20%20REAL%20--%3E%20APP%0A"})]),fallback:s(()=>[...a[0]||(a[0]=[r(" Loading... ",-1)])]),_:1}))])}const v=o(u,[["render",E]]);export{_ as __pageData,v as default};
