@@ -30,9 +30,6 @@ jobs:
 
       - name: Set up Android SDK components
         run: |
-          # sdkmanager (cmdline-tools 20) requires Java 17+; gradle 4.6/AGP 3.2.1 requires Java 8.
-          # Use runner-preinstalled Java 17 only for sdkmanager; setup-java's Java 8 stays as the
-          # job's JAVA_HOME for gradle steps below.
           JDK17=$(ls -d /usr/lib/jvm/*17* 2>/dev/null | head -1)
           echo "Using JDK17=$JDK17 for sdkmanager"
           export JAVA_HOME="$JDK17"
@@ -41,6 +38,9 @@ jobs:
           sdkmanager --version
           yes | sdkmanager --licenses >/dev/null 2>&1 || true
           sdkmanager --install "build-tools;28.0.3" "platforms;android-28" "ndk;19.2.5345600"
+          # gradle-experimental:0.11.1 needs an old-layout NDK (with platforms/ dir).
+          # Pin ANDROID_NDK_HOME to the r19c we just installed, overriding the runner's default r27.
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/19.2.5345600" >> "$GITHUB_ENV"
 
       - name: Grant execute permission for gradlew
         run: chmod +x VirtualApp/gradlew
