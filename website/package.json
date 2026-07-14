@@ -1,0 +1,17 @@
+{
+  "name": "virtualxposed-docs",
+  "version": "1.0.0",
+  "description": "VirtualXposed 教学文档站 —— 讲清这个项目做了什么、解决了什么问题、各功能点如何实现",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "mermaid": "^11.16.0",
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
