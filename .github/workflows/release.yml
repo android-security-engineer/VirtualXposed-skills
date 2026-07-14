@@ -31,14 +31,19 @@ jobs:
       - name: Set up Android SDK components
         run: |
           JDK17=$(ls -d /usr/lib/jvm/*17* 2>/dev/null | head -1)
-          echo "Using JDK17=$JDK17 for sdkmanager"
+          SDKMGR=/usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager
+          echo "Using JDK17=$JDK17, sdkmanager=$SDKMGR"
           export JAVA_HOME="$JDK17"
-          export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/cmdline-tools/current/bin:$PATH"
-          echo "ANDROID_HOME=$ANDROID_HOME"
-          sdkmanager --version
-          yes | sdkmanager --licenses >/dev/null 2>&1 || true
-          sdkmanager --install "build-tools;28.0.3" "platforms;android-28" "ndk;19.2.5345600"
-          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/19.2.5345600" >> "$GITHUB_ENV"
+          export PATH="$JAVA_HOME/bin:$PATH"
+          CUSTOM_SDK="$HOME/vxp-android-sdk"
+          mkdir -p "$CUSTOM_SDK/cmdline-tools"
+          ln -s /usr/local/lib/android/sdk/cmdline-tools/latest "$CUSTOM_SDK/cmdline-tools/latest"
+          "$SDKMGR" --sdk_root="$CUSTOM_SDK" --version
+          yes | "$SDKMGR" --sdk_root="$CUSTOM_SDK" --licenses >/dev/null 2>&1 || true
+          "$SDKMGR" --sdk_root="$CUSTOM_SDK" --install "build-tools;28.0.3" "platforms;android-28" "ndk;19.2.5345600"
+          echo "ANDROID_HOME=$CUSTOM_SDK" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$CUSTOM_SDK" >> "$GITHUB_ENV"
+          echo "ANDROID_NDK_HOME=$CUSTOM_SDK/ndk/19.2.5345600" >> "$GITHUB_ENV"
 
       - name: Grant execute permission for gradlew
         run: chmod +x VirtualApp/gradlew
