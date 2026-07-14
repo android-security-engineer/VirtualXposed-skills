@@ -580,3 +580,24 @@ Tool D guides agents to download signed APK from GitHub Releases
 download quick-reference table.
 
 Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"`
+
+---
+
+## 执行记录（2026-07-14，实际落地偏差）
+
+6 个 Task 全部完成并推送。T1（jcenter 阿里云镜像）、T4（keystore 脚本）、T5（文档）、T6（skill）按 Plan 原样落地。**T2/T3 的 android.yml / release.yml 在 CI 实测中远比 Plan 写的复杂**，经过 6 轮迭代修复才让 AGP 3.2.1 老栈在 ubuntu-latest 上跑通。最终落地的 SDK 安装方案与 Plan Step 1 写的"`android-actions/setup-android@v3`"截然不同：
+
+**实际落地的 `Set up Android SDK components` step（取代 Plan 中的 setup-android action）**：
+- 不用 `android-actions/setup-android`（v3/v4 都在 runner 上崩，报 "Wrong version in preinstalled sdkmanager"）
+- 不复用 runner 预装 SDK（含 android-34+ 新 schema XML，AGP 3.2.1 旧 sdklib 解析崩 `NumberFormatException: 34x`）
+- 改为：建干净独立 `ANDROID_HOME=$HOME/vxp-android-sdk`，用 runner 的 `sdkmanager --sdk_root=$CUSTOM_SDK` 只装 2018 同代三件套（build-tools;28.0.3 / platforms;android-28 / ndk;19.2.5345600）
+- sdkmanager 用 Java 17 跑（runner 预装 `/usr/lib/jvm/*17*`），gradle 用 setup-java 的 Java 8
+- `ANDROID_HOME`/`ANDROID_SDK_ROOT`/`ANDROID_NDK_HOME`（指向 r19c 老布局）经 `$GITHUB_ENV` 暴露给 gradle step
+- Decode keystore step：secret 经 `env:` 传入 + shell 内 `[ -z ]` 判断（**不能在 `if:` 里用 secrets 上下文**，会导致 workflow 文件级 0s 失败）
+
+**CI 结果**：`BUILD SUCCESSFUL in 2m49s`（aosp，含 native ndkBuild）+ 21s（fdroid），产出 `app-aosp-release-unsigned.apk`（7.3MB）与 `app-fdroid-release-unsigned.apk`（7.2MB），上传为 artifact `virtualxposed-apk`。**当前 APK 未签名**（4 个 `VXP_*` Secret 尚未配置，降级模式）；配置后推 `v*` tag 即触发 release.yml 发签名 APK。
+
+**剩余人工步骤（不属代码改动）**：用户本地跑 `./scripts/generate-keystore.sh release.jks`，把输出的 4 个值填入 GitHub Secrets，然后 `git tag v0.22.1 && git push origin v0.22.1` 触发首个签名 Release。
+
+详见记忆 `vxp-ci-android-legacy-stack-gotchas`（6 层坑完整记录）与 `vxp-release-signing-secrets`（Secret 配置）。
+
