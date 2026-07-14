@@ -30,7 +30,10 @@ jobs:
 
       - name: Set up Android SDK components
         run: |
-          export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/cmdline-tools/current/bin:$PATH"
+          JDK17=$(ls -d /usr/lib/jvm/*17* 2>/dev/null | head -1)
+          echo "Using JDK17=$JDK17 for sdkmanager"
+          export JAVA_HOME="$JDK17"
+          export PATH="$JAVA_HOME/bin:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/cmdline-tools/current/bin:$PATH"
           echo "ANDROID_HOME=$ANDROID_HOME"
           sdkmanager --version
           yes | sdkmanager --licenses >/dev/null 2>&1 || true
