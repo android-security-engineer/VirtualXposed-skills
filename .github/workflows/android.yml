@@ -37,13 +37,21 @@ jobs:
         run: chmod +x VirtualApp/gradlew
 
       - name: Decode release keystore
-        if: ${{ secrets.VXP_KEYSTORE_BASE64 != '' }}
+        env:
+          KS_B64: ${{ secrets.VXP_KEYSTORE_BASE64 }}
+          KS_ALIAS: ${{ secrets.VXP_KEY_ALIAS }}
+          KS_KEY_PWD: ${{ secrets.VXP_KEY_PWD }}
+          KS_STORE_PWD: ${{ secrets.VXP_STORE_PWD }}
         run: |
-          echo "${{ secrets.VXP_KEYSTORE_BASE64 }}" | base64 -d > VirtualApp/release.jks
+          if [ -z "$KS_B64" ]; then
+            echo "VXP_KEYSTORE_BASE64 未配置，跳过签名，产出未签名 APK（降级模式）。"
+            exit 0
+          fi
+          echo "$KS_B64" | base64 -d > VirtualApp/release.jks
           echo "keystore.path=release.jks" > VirtualApp/local.properties
-          echo "keystore.alias=${{ secrets.VXP_KEY_ALIAS }}" >> VirtualApp/local.properties
-          echo "keystore.pwd=${{ secrets.VXP_KEY_PWD }}" >> VirtualApp/local.properties
-          echo "keystore.alias_pwd=${{ secrets.VXP_STORE_PWD }}" >> VirtualApp/local.properties
+          echo "keystore.alias=$KS_ALIAS" >> VirtualApp/local.properties
+          echo "keystore.pwd=$KS_KEY_PWD" >> VirtualApp/local.properties
+          echo "keystore.alias_pwd=$KS_STORE_PWD" >> VirtualApp/local.properties
 
       - name: Build aosp release APK
         working-directory: VirtualApp
