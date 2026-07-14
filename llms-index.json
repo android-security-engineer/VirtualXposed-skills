@@ -1,0 +1,1928 @@
+{
+  "generatedFrom": "VirtualApp/lib/src/main/java/com/lody/virtual",
+  "fileCount": 239,
+  "moduleCount": 7,
+  "modules": {
+    "client/hook/proxies": "/reference/proxies/",
+    "client": "/reference/client/",
+    "server": "/reference/server/",
+    "mirror": "/reference/mirror/",
+    "helper": "/reference/helper/",
+    "remote": "/reference/remote/",
+    "os": "/reference/helper/"
+  },
+  "classes": [
+    {
+      "className": "Build",
+      "package": "com.lody.virtual",
+      "module": "other",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/Build.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/Build.java",
+      "docLink": null
+    },
+    {
+      "className": "DelegateApplication64Bit",
+      "package": "com.lody.virtual",
+      "module": "other",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/DelegateApplication64Bit.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/DelegateApplication64Bit.java",
+      "docLink": null
+    },
+    {
+      "className": "GmsSupport",
+      "package": "com.lody.virtual",
+      "module": "other",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/GmsSupport.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/GmsSupport.java",
+      "docLink": null
+    },
+    {
+      "className": "NativeEngine",
+      "package": "com.lody.virtual.client",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/NativeEngine.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/NativeEngine.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VClientImpl",
+      "package": "com.lody.virtual.client",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/VClientImpl.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/VClientImpl.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "BadgerManager",
+      "package": "com.lody.virtual.client.badger",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BadgerManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BadgerManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "BroadcastBadger1",
+      "package": "com.lody.virtual.client.badger",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BroadcastBadger1.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BroadcastBadger1.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "BroadcastBadger2",
+      "package": "com.lody.virtual.client.badger",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BroadcastBadger2.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/BroadcastBadger2.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "IBadger",
+      "package": "com.lody.virtual.client.badger",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/IBadger.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/badger/IBadger.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "CrashHandler",
+      "package": "com.lody.virtual.client.core",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/core/CrashHandler.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/core/CrashHandler.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "InstallStrategy",
+      "package": "com.lody.virtual.client.core",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/core/InstallStrategy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/core/InstallStrategy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "InvocationStubManager",
+      "package": "com.lody.virtual.client.core",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/core/InvocationStubManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/core/InvocationStubManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VirtualCore",
+      "package": "com.lody.virtual.client.core",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/core/VirtualCore.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/core/VirtualCore.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "Constants",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/Constants.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/Constants.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "DeadServerException",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/DeadServerException.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/DeadServerException.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "SpecialComponentList",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/SpecialComponentList.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/SpecialComponentList.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VirtualGPSSatalines",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/VirtualGPSSatalines.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/VirtualGPSSatalines.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VirtualRuntime",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/VirtualRuntime.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/VirtualRuntime.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ActivityFixer",
+      "package": "com.lody.virtual.client.fixer",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ActivityFixer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ActivityFixer.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ComponentFixer",
+      "package": "com.lody.virtual.client.fixer",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ComponentFixer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ComponentFixer.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ContextFixer",
+      "package": "com.lody.virtual.client.fixer",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ContextFixer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/fixer/ContextFixer.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "BinderInvocationProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "BinderInvocationStub",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationStub.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "MethodBox",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodBox.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodBox.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "MethodInvocationProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "MethodInvocationStub",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationStub.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "MethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceCallingPkgMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceCallingPkgMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceCallingPkgMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceLastPkgMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceLastPkgMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceLastPkgMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceLastUidMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceLastUidMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceLastUidMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceSequencePkgMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceSequencePkgMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceSequencePkgMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceSpecPkgMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceSpecPkgMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceSpecPkgMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ReplaceUidMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceUidMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ReplaceUidMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ResultStaticMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ResultStaticMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/ResultStaticMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StaticMethodProxy",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/StaticMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/StaticMethodProxy.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "AppInstrumentation",
+      "package": "com.lody.virtual.client.hook.delegate",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/AppInstrumentation.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/AppInstrumentation.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ComponentDelegate",
+      "package": "com.lody.virtual.client.hook.delegate",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/ComponentDelegate.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/ComponentDelegate.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "InstrumentationDelegate",
+      "package": "com.lody.virtual.client.hook.delegate",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/InstrumentationDelegate.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/InstrumentationDelegate.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "PhoneInfoDelegate",
+      "package": "com.lody.virtual.client.hook.delegate",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/PhoneInfoDelegate.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/PhoneInfoDelegate.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "TaskDescriptionDelegate",
+      "package": "com.lody.virtual.client.hook.delegate",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/TaskDescriptionDelegate.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/delegate/TaskDescriptionDelegate.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ExternalProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ExternalProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ExternalProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "InternalProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/InternalProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/InternalProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "SettingsProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/SettingsProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/SettingsProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "AccountManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.account",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/account/AccountManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/account/AccountManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "AlarmManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.alarm",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/alarm/AlarmManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/alarm/AlarmManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ActivityManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.am",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/ActivityManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/ActivityManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ActivityTaskManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.am",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/ActivityTaskManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/ActivityTaskManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "HCallbackStub",
+      "package": "com.lody.virtual.client.hook.proxies.am",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/HCallbackStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/HCallbackStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "TransactionHandlerStub",
+      "package": "com.lody.virtual.client.hook.proxies.am",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/TransactionHandlerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/TransactionHandlerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "AppOpsManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.appops",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/appops/AppOpsManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/appops/AppOpsManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "AppWidgetManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.appwidget",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/appwidget/AppWidgetManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/appwidget/AppWidgetManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "AudioManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.audio",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/audio/AudioManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/audio/AudioManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "BackupManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.backup",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/backup/BackupManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/backup/BackupManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "BatteryStatsStub",
+      "package": "com.lody.virtual.client.hook.proxies.battery",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/battery/BatteryStatsStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/battery/BatteryStatsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "BluetoothStub",
+      "package": "com.lody.virtual.client.hook.proxies.bluetooth",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/bluetooth/BluetoothStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/bluetooth/BluetoothStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ClipBoardStub",
+      "package": "com.lody.virtual.client.hook.proxies.clipboard",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/clipboard/ClipBoardStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/clipboard/ClipBoardStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ConnectivityStub",
+      "package": "com.lody.virtual.client.hook.proxies.connectivity",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/connectivity/ConnectivityStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/connectivity/ConnectivityStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ContentServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.content",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/content/ContentServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/content/ContentServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ContextHubServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.context_hub",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/context_hub/ContextHubServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/context_hub/ContextHubServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "DevicePolicyManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.devicepolicy",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/devicepolicy/DevicePolicyManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/devicepolicy/DevicePolicyManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "DisplayStub",
+      "package": "com.lody.virtual.client.hook.proxies.display",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/display/DisplayStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/display/DisplayStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "DropBoxManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.dropbox",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/dropbox/DropBoxManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/dropbox/DropBoxManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "FingerprintManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.fingerprint",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/fingerprint/FingerprintManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/fingerprint/FingerprintManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "GraphicsStatsStub",
+      "package": "com.lody.virtual.client.hook.proxies.graphics",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/graphics/GraphicsStatsStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/graphics/GraphicsStatsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MmsStub",
+      "package": "com.lody.virtual.client.hook.proxies.imms",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/imms/MmsStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/imms/MmsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "InputMethodManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.input",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/input/InputMethodManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/input/InputMethodManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ISmsStub",
+      "package": "com.lody.virtual.client.hook.proxies.isms",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/isms/ISmsStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/isms/ISmsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ISubStub",
+      "package": "com.lody.virtual.client.hook.proxies.isub",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/isub/ISubStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/isub/ISubStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "JobServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.job",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/job/JobServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/job/JobServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "LibCoreStub",
+      "package": "com.lody.virtual.client.hook.proxies.libcore",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/LibCoreStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/LibCoreStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "GPSListenerThread",
+      "package": "com.lody.virtual.client.hook.proxies.location",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/GPSListenerThread.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/GPSListenerThread.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "GPSStatusListenerThread",
+      "package": "com.lody.virtual.client.hook.proxies.location",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/GPSStatusListenerThread.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/GPSStatusListenerThread.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "LocationManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.location",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/LocationManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/LocationManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.location",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MockLocationHelper",
+      "package": "com.lody.virtual.client.hook.proxies.location",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/MockLocationHelper.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/location/MockLocationHelper.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MediaRouterServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.media.router",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/media/router/MediaRouterServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/media/router/MediaRouterServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "SessionManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.media.session",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/media/session/SessionManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/media/session/SessionManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MountServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.mount",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/mount/MountServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/mount/MountServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "NetworkManagementStub",
+      "package": "com.lody.virtual.client.hook.proxies.network",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/network/NetworkManagementStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/network/NetworkManagementStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "NotificationManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.notification",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/notification/NotificationManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/notification/NotificationManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "DeviceIdentifiersPolicyServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.os",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/os/DeviceIdentifiersPolicyServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/os/DeviceIdentifiersPolicyServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "PersistentDataBlockServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.persistent_data_block",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/persistent_data_block/PersistentDataBlockServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/persistent_data_block/PersistentDataBlockServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "PhoneSubInfoStub",
+      "package": "com.lody.virtual.client.hook.proxies.phonesubinfo",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/phonesubinfo/PhoneSubInfoStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/phonesubinfo/PhoneSubInfoStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "LauncherAppsStub",
+      "package": "com.lody.virtual.client.hook.proxies.pm",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/LauncherAppsStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/LauncherAppsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "PackageManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.pm",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/PackageManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/PackageManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "PowerManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.power",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/power/PowerManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/power/PowerManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "RestrictionStub",
+      "package": "com.lody.virtual.client.hook.proxies.restriction",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/restriction/RestrictionStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/restriction/RestrictionStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "SearchManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.search",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/search/SearchManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/search/SearchManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "ShortcutServiceStub",
+      "package": "com.lody.virtual.client.hook.proxies.shortcut",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/shortcut/ShortcutServiceStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/shortcut/ShortcutServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "TelephonyRegistryStub",
+      "package": "com.lody.virtual.client.hook.proxies.telephony",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/TelephonyRegistryStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/TelephonyRegistryStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "TelephonyStub",
+      "package": "com.lody.virtual.client.hook.proxies.telephony",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/TelephonyStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/TelephonyStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "UsageStatsManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.usage",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/usage/UsageStatsManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/usage/UsageStatsManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "UserManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.user",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/user/UserManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/user/UserManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "VibratorStub",
+      "package": "com.lody.virtual.client.hook.proxies.vibrator",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/vibrator/VibratorStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/vibrator/VibratorStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "AutoFillManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.view",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/view/AutoFillManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/view/AutoFillManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "WifiManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.wifi",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi/WifiManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi/WifiManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "GhostWifiScannerImpl",
+      "package": "com.lody.virtual.client.hook.proxies.wifi_scanner",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi_scanner/GhostWifiScannerImpl.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi_scanner/GhostWifiScannerImpl.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "WifiScannerStub",
+      "package": "com.lody.virtual.client.hook.proxies.wifi_scanner",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi_scanner/WifiScannerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/wifi_scanner/WifiScannerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "WindowManagerStub",
+      "package": "com.lody.virtual.client.hook.proxies.window",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/WindowManagerStub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/WindowManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "WindowSessionPatch",
+      "package": "com.lody.virtual.client.hook.proxies.window.session",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/session/WindowSessionPatch.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/session/WindowSessionPatch.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "HackAppUtils",
+      "package": "com.lody.virtual.client.hook.secondary",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/HackAppUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/HackAppUtils.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ProxyServiceFactory",
+      "package": "com.lody.virtual.client.hook.secondary",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/ProxyServiceFactory.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/ProxyServiceFactory.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ServiceConnectionDelegate",
+      "package": "com.lody.virtual.client.hook.secondary",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/ServiceConnectionDelegate.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/ServiceConnectionDelegate.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "MethodParameterUtils",
+      "package": "com.lody.virtual.client.hook.utils",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/utils/MethodParameterUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/utils/MethodParameterUtils.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "IInjector",
+      "package": "com.lody.virtual.client.interfaces",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/interfaces/IInjector.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/interfaces/IInjector.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ActivityClientRecord",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ActivityClientRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ActivityClientRecord.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "LocalProxyUtils",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/LocalProxyUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/LocalProxyUtils.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ProviderCall",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ProviderCall.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ProviderCall.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ServiceManagerNative",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ServiceManagerNative.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/ServiceManagerNative.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VAccountManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VAccountManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VAccountManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VActivityManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VActivityManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VActivityManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VDeviceManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VDeviceManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VDeviceManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VJobScheduler",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VJobScheduler.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VJobScheduler.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VNotificationManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VNotificationManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VNotificationManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VPackageManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VPackageManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VPackageManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VirtualLocationManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VirtualLocationManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VirtualLocationManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VirtualStorageManager",
+      "package": "com.lody.virtual.client.ipc",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VirtualStorageManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/ipc/VirtualStorageManager.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "NativeMethods",
+      "package": "com.lody.virtual.client.natives",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/natives/NativeMethods.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/natives/NativeMethods.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "AmsTask",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/AmsTask.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/AmsTask.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ChooseAccountTypeActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooseAccountTypeActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooseAccountTypeActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ChooseTypeAndAccountActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooseTypeAndAccountActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooseTypeAndAccountActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ChooserActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooserActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ChooserActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "DaemonJobService",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/DaemonJobService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/DaemonJobService.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "DaemonService",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/DaemonService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/DaemonService.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ResolverActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ResolverActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ResolverActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ShortcutHandleActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ShortcutHandleActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/ShortcutHandleActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubCP",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubCP.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubCP.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubDialog",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubDialog.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubDialog.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubExcludeFromRecentActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubExcludeFromRecentActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubExcludeFromRecentActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubJob",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubJob.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubJob.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubPendingActivity",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingActivity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingActivity.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubPendingReceiver",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingReceiver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingReceiver.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "StubPendingService",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/StubPendingService.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "VASettings",
+      "package": "com.lody.virtual.client.stub",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/VASettings.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/stub/VASettings.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "ArtDexOptimizer",
+      "package": "com.lody.virtual.helper",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/ArtDexOptimizer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/ArtDexOptimizer.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ParcelHelper",
+      "package": "com.lody.virtual.helper",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/ParcelHelper.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/ParcelHelper.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "PersistenceLayer",
+      "package": "com.lody.virtual.helper",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/PersistenceLayer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/PersistenceLayer.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ArrayMap",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ArrayMap.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ArrayMap.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ArraySet",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ArraySet.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ArraySet.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "IntArray",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/IntArray.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/IntArray.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "SimpleArrayMap",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/SimpleArrayMap.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/SimpleArrayMap.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "SparseArray",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/SparseArray.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/SparseArray.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "AccountManagerCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/AccountManagerCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/AccountManagerCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ActivityManagerCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ActivityManagerCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ActivityManagerCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ApplicationThreadCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ApplicationThreadCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ApplicationThreadCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "BuildCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/BuildCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/BuildCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "BundleCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/BundleCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/BundleCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ContentProviderCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ContentProviderCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ContentProviderCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ContentResolverCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ContentResolverCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ContentResolverCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "IApplicationThreadCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/IApplicationThreadCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/IApplicationThreadCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "NativeLibraryHelperCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/NativeLibraryHelperCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/NativeLibraryHelperCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ObjectsCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ObjectsCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ObjectsCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "PackageParserCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/PackageParserCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/PackageParserCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ParceledListSliceCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ParceledListSliceCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/ParceledListSliceCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "StorageManagerCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/StorageManagerCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/StorageManagerCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "SystemPropertiesCompat",
+      "package": "com.lody.virtual.helper.compat",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/SystemPropertiesCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/compat/SystemPropertiesCompat.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ArrayUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ArrayUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ArrayUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "AtomicFile",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/AtomicFile.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/AtomicFile.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "BitmapUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/BitmapUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/BitmapUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ClassUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ClassUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ClassUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ComponentUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ComponentUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ComponentUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "DeviceUtil",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/DeviceUtil.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/DeviceUtil.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "DrawableUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/DrawableUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/DrawableUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "EncodeUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/EncodeUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/EncodeUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "FastXmlSerializer",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/FastXmlSerializer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/FastXmlSerializer.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "FileUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/FileUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/FileUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "MD5Utils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/MD5Utils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/MD5Utils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "OSUtils",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/OSUtils.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/OSUtils.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "Reflect",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/Reflect.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/Reflect.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "ReflectException",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ReflectException.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/ReflectException.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "SchedulerTask",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/SchedulerTask.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/SchedulerTask.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "Singleton",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/Singleton.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/Singleton.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VLog",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/VLog.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/VLog.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "XmlSerializerAndParser",
+      "package": "com.lody.virtual.helper.utils",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/XmlSerializerAndParser.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/XmlSerializerAndParser.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VBinder",
+      "package": "com.lody.virtual.os",
+      "module": "os",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/os/VBinder.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/os/VBinder.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VEnvironment",
+      "package": "com.lody.virtual.os",
+      "module": "os",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/os/VEnvironment.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/os/VEnvironment.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VUserHandle",
+      "package": "com.lody.virtual.os",
+      "module": "os",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserHandle.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserHandle.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VUserInfo",
+      "package": "com.lody.virtual.os",
+      "module": "os",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserInfo.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "VUserManager",
+      "package": "com.lody.virtual.os",
+      "module": "os",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/os/VUserManager.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "AppTaskInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/AppTaskInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/AppTaskInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "BadgerInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/BadgerInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/BadgerInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "InstallResult",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/InstallResult.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/InstallResult.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "InstalledAppInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/InstalledAppInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/InstalledAppInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "PendingIntentData",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/PendingIntentData.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/PendingIntentData.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "PendingResultData",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/PendingResultData.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/PendingResultData.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "Problem",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/Problem.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/Problem.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "ReceiverInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/ReceiverInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/ReceiverInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "StubActivityRecord",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/StubActivityRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/StubActivityRecord.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "SyncInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/SyncInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/SyncInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "VDeviceInfo",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/VDeviceInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/VDeviceInfo.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "VParceledListSlice",
+      "package": "com.lody.virtual.remote",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/VParceledListSlice.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/VParceledListSlice.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "VCell",
+      "package": "com.lody.virtual.remote.vloc",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VCell.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VCell.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "VLocation",
+      "package": "com.lody.virtual.remote.vloc",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VLocation.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VLocation.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "VWifi",
+      "package": "com.lody.virtual.remote.vloc",
+      "module": "remote",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VWifi.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/remote/vloc/VWifi.java",
+      "docLink": "/reference/remote/"
+    },
+    {
+      "className": "BinderProvider",
+      "package": "com.lody.virtual.server",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/BinderProvider.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/BinderProvider.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "IJobScheduler",
+      "package": "com.lody.virtual.server",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/IJobScheduler.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/IJobScheduler.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ServiceCache",
+      "package": "com.lody.virtual.server",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/ServiceCache.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/ServiceCache.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "RegisteredServicesParser",
+      "package": "com.lody.virtual.server.accounts",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/RegisteredServicesParser.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/RegisteredServicesParser.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VAccount",
+      "package": "com.lody.virtual.server.accounts",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VAccount.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VAccount.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VAccountManagerService",
+      "package": "com.lody.virtual.server.accounts",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VAccountManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VAccountManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VContentService",
+      "package": "com.lody.virtual.server.accounts",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VContentService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VContentService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VSyncRecord",
+      "package": "com.lody.virtual.server.accounts",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VSyncRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/accounts/VSyncRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "AttributeCache",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/AttributeCache.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/AttributeCache.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "BroadcastSystem",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/BroadcastSystem.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/BroadcastSystem.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PendingIntents",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/PendingIntents.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/PendingIntents.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ServiceRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ServiceRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ServiceRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "UidSystem",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/UidSystem.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/UidSystem.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VActivityManagerService",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/VActivityManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/VActivityManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "DeviceInfoPersistenceLayer",
+      "package": "com.lody.virtual.server.device",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/device/DeviceInfoPersistenceLayer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/device/DeviceInfoPersistenceLayer.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VDeviceManagerService",
+      "package": "com.lody.virtual.server.device",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/device/VDeviceManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/device/VDeviceManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VJobSchedulerService",
+      "package": "com.lody.virtual.server.job",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/job/VJobSchedulerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/job/VJobSchedulerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VirtualLocationService",
+      "package": "com.lody.virtual.server.location",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/location/VirtualLocationService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/location/VirtualLocationService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "NotificationCompat",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompat.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VNotificationManagerService",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/VNotificationManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/VNotificationManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "FastImmutableArraySet",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/FastImmutableArraySet.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/FastImmutableArraySet.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "IntentResolver",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/IntentResolver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/IntentResolver.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageCacheManager",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageCacheManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageCacheManager.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageSetting",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageSetting.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageSetting.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageUserState",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageUserState.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackageUserState.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PrivilegeAppOptimizer",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PrivilegeAppOptimizer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PrivilegeAppOptimizer.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VAppManagerService",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VAppManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VAppManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VPackageManagerService",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VPackageManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VPackageManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VUserManagerService",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VUserManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/VUserManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "FileBridge",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/FileBridge.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/FileBridge.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageHelper",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageHelper.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageHelper.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageInstallInfo",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallInfo.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageInstallObserver",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallObserver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallObserver.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageInstallerSession",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallerSession.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/PackageInstallerSession.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "SessionInfo",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/SessionInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/SessionInfo.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "SessionParams",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/SessionParams.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/SessionParams.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VPackageInstallerService",
+      "package": "com.lody.virtual.server.pm.installer",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/VPackageInstallerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/installer/VPackageInstallerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PackageParserEx",
+      "package": "com.lody.virtual.server.pm.parser",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/parser/PackageParserEx.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/parser/PackageParserEx.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VPackage",
+      "package": "com.lody.virtual.server.pm.parser",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/parser/VPackage.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/parser/VPackage.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "BinderDelegateService",
+      "package": "com.lody.virtual.server.secondary",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/secondary/BinderDelegateService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/secondary/BinderDelegateService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "FakeIdentityBinder",
+      "package": "com.lody.virtual.server.secondary",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/secondary/FakeIdentityBinder.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/secondary/FakeIdentityBinder.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VSConfig",
+      "package": "com.lody.virtual.server.vs",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VSConfig.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VSConfig.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "VirtualStorageService",
+      "package": "com.lody.virtual.server.vs",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VirtualStorageService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VirtualStorageService.java",
+      "docLink": "/reference/server/"
+    }
+  ]
+}

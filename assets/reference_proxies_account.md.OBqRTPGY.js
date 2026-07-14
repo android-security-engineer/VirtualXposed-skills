@@ -1,0 +1,36 @@
+import{_ as o,C as t,o as a,c as p,a2 as n,b as r,w as s,a as d,E as l,a3 as i}from"./chunks/framework.DZUUNQ77.js";const v=JSON.parse('{"title":"account · 账户服务代理","description":"","frontmatter":{},"headers":[],"relativePath":"reference/proxies/account.md","filePath":"reference/proxies/account.md","lastUpdated":1784053534000}'),u={name:"reference/proxies/account.md"};function A(h,e,g,m,b,P){const c=t("Mermaid");return a(),p("div",null,[e[1]||(e[1]=n('<h1 id="account-·-账户服务代理" tabindex="-1">account · 账户服务代理 <a class="header-anchor" href="#account-·-账户服务代理" aria-label="Permalink to &quot;account · 账户服务代理&quot;">​</a></h1><div class="tip custom-block"><p class="custom-block-title">源码路径</p><p><a href="https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/account/AccountManagerStub.java" target="_blank" rel="noreferrer"><code>src/main/java/com/lody/virtual/client/hook/proxies/account/AccountManagerStub.java</code></a></p></div><p>拦截 <code>AccountManager</code>（账户管理器），把目标 App 对系统账户的读写重定向到虚拟账户服务 <code>VAccountManagerService</code>。</p><h2 id="拦截的服务" tabindex="-1">拦截的服务 <a class="header-anchor" href="#拦截的服务" aria-label="Permalink to &quot;拦截的服务&quot;">​</a></h2><p><code>Context.ACCOUNT_SERVICE</code>，通过 <code>mirror.android.accounts.IAccountManager.Stub.asInterface</code> 拿到系统 <code>IAccountManager</code> 的代理接口。</p><h2 id="注入点" tabindex="-1">注入点 <a class="header-anchor" href="#注入点" aria-label="Permalink to &quot;注入点&quot;">​</a></h2><p>继承 <code>BinderInvocationProxy</code>，构造时把 <code>ServiceManager.sCache[&quot;account&quot;]</code> 替换为携带本代理的动态代理 IBinder。</p><h2 id="关键-methodproxy" tabindex="-1">关键 MethodProxy <a class="header-anchor" href="#关键-methodproxy" aria-label="Permalink to &quot;关键 MethodProxy&quot;">​</a></h2><p><code>AccountManagerStub</code> 在 <code>onBindMethods</code> 内联注册了约 30 个 MethodProxy，覆盖账户体系全部接口：</p><ul><li><strong>查询</strong>：<code>getAccounts</code> / <code>getAccountsForPackage</code> / <code>getAccountsByTypeForPackage</code> / <code>getAccountsAsUser</code> / <code>hasFeatures</code> / <code>getAccountsByFeatures</code> / <code>getAuthenticatorTypes</code></li><li><strong>凭证读写</strong>：<code>getPassword</code> / <code>setPassword</code> / <code>clearPassword</code> / <code>getUserData</code> / <code>setUserData</code> / <code>peekAuthToken</code> / <code>setAuthToken</code> / <code>invalidateAuthToken</code> / <code>getAuthToken</code> / <code>getAuthTokenLabel</code></li><li><strong>账户增删</strong>：<code>addAccountExplicitly</code> / <code>removeAccount</code> / <code>removeAccountAsUser</code> / <code>removeAccountExplicitly</code> / <code>copyAccountToUser</code> / <code>addAccount</code> / <code>addAccountAsUser</code> / <code>updateCredentials</code> / <code>editProperties</code> / <code>confirmCredentialsAsUser</code> / <code>accountAuthenticated</code> / <code>addSharedAccountAsUser</code> / <code>getSharedAccountsAsUser</code></li><li><strong>权限</strong>：<code>updateAppPermission</code></li></ul><h2 id="与虚拟服务的关系" tabindex="-1">与虚拟服务的关系 <a class="header-anchor" href="#与虚拟服务的关系" aria-label="Permalink to &quot;与虚拟服务的关系&quot;">​</a></h2><p>所有 MethodProxy 都委托给 <code>VAccountManager.get()</code>（客户端 IPC 代理），最终跨进程调用 server 的 <a href="./../server/accounts"><code>VAccountManagerService</code></a>，让每个虚拟用户拥有独立的账户空间，互不污染真实系统账户。</p>',12)),(a(),r(i,null,{default:s(()=>[l(c,{id:"mermaid-57",class:"mermaid",graph:"flowchart%20LR%0A%20%20APP%5B%22%E7%9B%AE%E6%A0%87%20App%3Cbr%2F%3EAccountManager.getAccounts()%22%5D%20--%3E%20STUB%5B%22AccountManagerStub%3Cbr%2F%3EgetAccounts%20MethodProxy%22%5D%0A%20%20STUB%20--%3E%20VA%5B%22VAccountManager%20(client%20ipc)%22%5D%0A%20%20VA%20--%3E%7C%22%E8%B7%A8%E8%BF%9B%E7%A8%8B%20Binder%22%7C%20SVC%5B%22server%3A%20VAccountManagerService%3Cbr%2F%3E(%E6%8C%89%20userId%20%E9%9A%94%E7%A6%BB%E7%9A%84%E8%B4%A6%E6%88%B7)%22%5D%0A"})]),fallback:s(()=>[...e[0]||(e[0]=[d(" Loading... ",-1)])]),_:1})),e[2]||(e[2]=n(`<h2 id="拦截方法清单" tabindex="-1">拦截方法清单 <a class="header-anchor" href="#拦截方法清单" aria-label="Permalink to &quot;拦截方法清单&quot;">​</a></h2><p>从源码 <code>onBindMethods</code> / <code>@Inject</code> 内部类提取的 MethodProxy 拦截点：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>- accountAuthenticated</span></span>
+<span class="line"><span>- addAccount</span></span>
+<span class="line"><span>- addAccountAsUser</span></span>
+<span class="line"><span>- addAccountExplicitly</span></span>
+<span class="line"><span>- addSharedAccountAsUser</span></span>
+<span class="line"><span>- clearPassword</span></span>
+<span class="line"><span>- confirmCredentialsAsUser</span></span>
+<span class="line"><span>- copyAccountToUser</span></span>
+<span class="line"><span>- editProperties</span></span>
+<span class="line"><span>- getAccounts</span></span>
+<span class="line"><span>- getAccountsAsUser</span></span>
+<span class="line"><span>- getAccountsByFeatures</span></span>
+<span class="line"><span>- getAccountsByTypeForPackage</span></span>
+<span class="line"><span>- getAccountsForPackage</span></span>
+<span class="line"><span>- getAuthToken</span></span>
+<span class="line"><span>- getAuthTokenLabel</span></span>
+<span class="line"><span>- getAuthenticatorTypes</span></span>
+<span class="line"><span>- getPassword</span></span>
+<span class="line"><span>- getPreviousName</span></span>
+<span class="line"><span>- getSharedAccountsAsUser</span></span>
+<span class="line"><span>- getUserData</span></span>
+<span class="line"><span>- hasFeatures</span></span>
+<span class="line"><span>- invalidateAuthToken</span></span>
+<span class="line"><span>- peekAuthToken</span></span>
+<span class="line"><span>- removeAccount</span></span>
+<span class="line"><span>- removeAccountAsUser</span></span>
+<span class="line"><span>- removeAccountExplicitly</span></span>
+<span class="line"><span>- removeSharedAccountAsUser</span></span>
+<span class="line"><span>- renameAccount</span></span>
+<span class="line"><span>- renameSharedAccountAsUser</span></span>
+<span class="line"><span>- setAccountVisibility</span></span>
+<span class="line"><span>- setAuthToken</span></span>
+<span class="line"><span>- setPassword</span></span>
+<span class="line"><span>- setUserData</span></span>
+<span class="line"><span>- updateAppPermission</span></span>
+<span class="line"><span>- updateCredentials</span></span></code></pre></div>`,3))])}const _=o(u,[["render",A]]);export{v as __pageData,_ as default};

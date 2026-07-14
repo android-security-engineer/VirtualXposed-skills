@@ -1,0 +1,73 @@
+# VirtualXposed 完整知识浓缩版
+
+本文件是 VirtualXposed 教学站的全部知识点浓缩，供 AI Agent 单次读取获取全貌。
+所有数字（481 Java / 96 native / 48 服务代理 / 144 镜像类）均来自源码与文档真实统计。
+
+## 1. 项目定位
+
+VirtualXposed = VirtualApp（应用沙箱虚拟化）+ epic（ART inline hook）。
+目标：免 Root、免解锁 Bootloader 运行 Xposed 模块。支持 Android 5.0~10.0。
+两大限制：(1) 不支持修改系统；(2) 不支持资源 Hook。
+
+## 2. 架构（六大模块）
+
+VirtualXposed 的 lib 模块（478 Java + 96 native 源文件）分为：
+- 🔌 服务代理 client/hook/proxies/（~80 文件）：48 个系统服务的客户端 Hook 注入
+- 🖥️ 虚拟服务 server/（~90 文件）：server 进程里重新实现的系统服务（AMS/PMS/AccountManager 等）
+- ⚙️ 客户端基建 client/（~60 文件）：Hook 框架、IPC 桥、Stub、修复器
+- 🪞 反射镜像 mirror/（~120 文件，144 影子类）：Android 隐藏 API 的类型安全镜像
+- 🧰 工具与数据 helper/ · remote/（~50 文件）：兼容工具、集合、跨进程数据类
+- 🦀 Native 层 jni/（90 文件）：libc hook / ART hook / inline hook（x86_64 + arm64）
+
+## 3. 进程模型
+
+- Server 进程：常驻，承载虚拟系统服务（VAMS/VPMS 等）
+- Client 进程：每个虚拟 App 一个，运行目标 App + Xposed 模块
+- 通过 Binder IPC 桥跨进程通信
+
+## 4. 核心机制
+
+### 4.1 应用虚拟化
+在自身进程内用 Java 重新实现 AMS/PMS/AccountManager/LocationManager 等，让任意 App "安装"进虚拟环境独立运行。
+
+### 4.2 系统服务 Hook（48 个代理）
+统一模式：目标 App → ServiceManager.sCache（已被替换）→ 动态代理 IBinder → XxxStub(BinderInvocationProxy) → 按方法名分发到 MethodProxy 列表 → 改写参数/转发到虚拟服务或真实系统。
+覆盖：account, alarm, am, appops, audio, clipboard, connectivity, devicepolicy, display, fingerprint, location, notification, pm, telephony, wifi 等 48 个服务。
+
+### 4.3 Stub Activity 机制
+预注册 100 个占位 Activity 欺骗真实 AMS，再用 H Callback 在主线程把占位 Intent 还原为虚拟 App 的真实 Intent。
+
+### 4.4 跨进程 IPC 桥
+VirtualXposed 自建 Binder 通信，把虚拟 App 的系统调用路由到 server 进程的虚拟服务。
+
+### 4.5 IO 重定向
+native 层 hook libc 文件接口（open/stat 等），把 /data/data/<pkg>、/sdcard 等路径透明重定向到虚拟数据目录，实现数据隔离。
+
+### 4.6 反射镜像 mirror
+144 个影子类把 Android 隐藏 API 包装成类型安全的静态字段访问，配合 free_reflection 解封 Android 9+ 反射限制。
+
+### 4.7 Native 层 libva++.so
+96 个 native 源文件：libc 文件 hook（IOUniformer/SandboxFs）、ART 方法 hook（VMPatch）、x86_64（Substrate）+ arm64（A64InlineHook）两套 inline hook 引擎、fake_dlfcn 绕 linker、SymbolFinder 符号查找。
+
+## 5. Xposed 集成
+
+- 免 Root Hook 原理：epic 在 ART 运行时做 inline hook，结合 ExposedBridge 还原 Xposed API
+- 模块加载流程：虚拟 App 进程启动时加载已激活的 Xposed 模块
+- 为何不支持资源 Hook：资源 Hook 需要替换系统 Resource 缓存，虚拟环境无系统权限
+
+## 6. Hook 框架基类链
+
+MethodProxy（方法代理基类）→ Replace*MethodProxy（改参数族）/ StaticMethodProxy / ResultStaticMethodProxy（固定返回）→ MethodInvocationStub（分发器）→ MethodInvocationProxy（注入器）→ BinderInvocationProxy（binder 注入）。
+注册靠 @Inject / @SkipInject 注解，由 InvocationStubManager 统一管理。
+
+## 7. 关键限制（写给想写 Xposed 模块的人）
+
+VirtualXposed 是 Xposed 模块的**运行容器**，不是可编程 SDK。它自身不提供 IXposedHookLoadPackage 等入口给开发者调用——你写的仍是标准 Xposed 模块，VirtualXposed 负责在免 Root 环境让它生效。
+不支持：修改系统的模块（如重力工具箱）、依赖资源 Hook 的主题模块。
+
+## 8. Agent 对接
+
+- 项目级上下文：仓库根 CLAUDE.md / AGENTS.md
+- 站点入口：/llms.txt（本协议文件）
+- 结构化检索：/llms-index.json（类→文件→模块→文档映射）
+- Claude Code skill：.claude/skills/virtualxposed/（只读导航：查源码位置、查能力实现路径、生成 hook 指引）
