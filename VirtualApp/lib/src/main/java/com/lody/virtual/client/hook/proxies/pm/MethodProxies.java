@@ -632,7 +632,7 @@ class MethodProxies {
         @Override
         public Object call(Object who, Method method, Object... args) throws Throwable {
             String pkg = (String) args[0];
-            int flags = (int) args[1];
+            int flags = ((Number) args[1]).intValue();
             int userId = VUserHandle.myUserId();
             PackageInfo packageInfo = VPackageManager.get().getPackageInfo(pkg, flags, userId);
             if (packageInfo != null) {
