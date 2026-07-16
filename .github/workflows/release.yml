@@ -49,12 +49,21 @@ jobs:
         run: chmod +x VirtualApp/gradlew
 
       - name: Decode release keystore
+        env:
+          KS_B64: ${{ secrets.VXP_KEYSTORE_BASE64 }}
+          KS_ALIAS: ${{ secrets.VXP_KEY_ALIAS }}
+          KS_KEY_PWD: ${{ secrets.VXP_KEY_PWD }}
+          KS_STORE_PWD: ${{ secrets.VXP_STORE_PWD }}
         run: |
-          echo "${{ secrets.VXP_KEYSTORE_BASE64 }}" | base64 -d > VirtualApp/release.jks
+          if [ -z "$KS_B64" ]; then
+            echo "VXP_KEYSTORE_BASE64 未配置，跳过签名，产出未签名 APK（降级模式）。"
+            exit 0
+          fi
+          echo "$KS_B64" | base64 -d > VirtualApp/release.jks
           echo "keystore.path=release.jks" > VirtualApp/local.properties
-          echo "keystore.alias=${{ secrets.VXP_KEY_ALIAS }}" >> VirtualApp/local.properties
-          echo "keystore.pwd=${{ secrets.VXP_KEY_PWD }}" >> VirtualApp/local.properties
-          echo "keystore.alias_pwd=${{ secrets.VXP_STORE_PWD }}" >> VirtualApp/local.properties
+          echo "keystore.alias=$KS_ALIAS" >> VirtualApp/local.properties
+          echo "keystore.pwd=$KS_KEY_PWD" >> VirtualApp/local.properties
+          echo "keystore.alias_pwd=$KS_STORE_PWD" >> VirtualApp/local.properties
 
       - name: Build signed aosp release APK
         working-directory: VirtualApp
@@ -82,7 +91,9 @@ jobs:
 
             ### 安装
 
-            下载下方 `VirtualXposed-${{ steps.apk.outputs.tag }}.apk`，在 Android 5.0~10.0 设备上直接安装（已签名，arm64-v8a / x86_64）。
+            下载下方 `VirtualXposed-${{ steps.apk.outputs.tag }}.apk`，在 Android 5.0~10.0 设备上安装（arm64-v8a / x86_64）。
+
+            > 若本版本为**未签名降级构建**（仓库未配置签名 Secret），Android 7+ 会拒绝安装（`INSTALL_PARSE_FAILED_NO_CERTIFICATES`），需自行用 apksigner 签名后再装。配置签名 Secret 后推 tag 即产签名 APK。
 
             ### 从源码构建
 
