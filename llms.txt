@@ -1,6 +1,6 @@
 # VirtualXposed
 
-> 免 Root 运行 Xposed 模块的 Android 虚拟化实现 —— 原理与源码解析教学站。基于 VirtualApp + epic，用 Java 重新实现 AMS/PMS 等 48 个系统服务，在自身进程内虚拟出独立 App 运行环境。
+> 免 Root 运行 Xposed 模块的 Android 虚拟化实现 —— 原理与源码解析教学站。基于 VirtualApp + epic，用 Java 重新实现 AMS/PMS 等 45 个系统服务，在自身进程内虚拟出独立 App 运行环境。
 
 VirtualXposed 是什么：一个不需要 Root、不需要解锁 Bootloader 的 App。它基于 VirtualApp（应用沙箱虚拟化）和 epic（ART 方法 Hook），让任意 Xposed 模块在普通 App 进程内加载并激活，Hook 目标应用的方法调用。
 
@@ -9,11 +9,11 @@ VirtualXposed 是什么：一个不需要 Root、不需要解锁 Bootloader 的 
 - [入门：这是什么](https://android-security-engineer.github.io/VirtualXposed-skills/guide/what-is-virtualxposed): VirtualXposed 定位与两大限制（不改系统、不支持资源 Hook）
 - [架构总览](https://android-security-engineer.github.io/VirtualXposed-skills/architecture/overview): 整体架构、进程模型、六大模块组成
 - [应用虚拟化](https://android-security-engineer.github.io/VirtualXposed-skills/features/app-virtualization): 在进程内重实现系统服务的核心机制
-- [系统服务 Hook](https://android-security-engineer.github.io/VirtualXposed-skills/features/service-hook): 48 个系统服务代理的统一拦截模式
+- [系统服务 Hook](https://android-security-engineer.github.io/VirtualXposed-skills/features/service-hook): 45 个系统服务代理的统一拦截模式
 - [Stub Activity 机制](https://android-security-engineer.github.io/VirtualXposed-skills/features/stub-activity): 100 个占位 Activity 欺骗真实 AMS
 - [IO 重定向](https://android-security-engineer.github.io/VirtualXposed-skills/features/io-redirect): native 层 libc hook 实现数据隔离
 - [免 Root Hook 原理](https://android-security-engineer.github.io/VirtualXposed-skills/xposed/how-it-works): epic + ExposedBridge 还原 Xposed API
-- [源码参考总索引](https://android-security-engineer.github.io/VirtualXposed-skills/reference/): 481 Java + 96 native 源文件的逐模块解析
+- [源码参考总索引](https://android-security-engineer.github.io/VirtualXposed-skills/reference/): 464 Java + 96 native 源文件的逐模块解析
 
 ## 可选
 
