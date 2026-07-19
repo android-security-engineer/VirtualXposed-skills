@@ -1,93 +1,55 @@
-[![Build Status](https://travis-ci.org/android-hacker/VirtualXposed.svg?branch=exposed)](https://travis-ci.org/android-hacker/VirtualXposed)
+# VirtualXposed-skills
 
-[中文文档](CHINESE.md "中文")
+> VirtualXposed 的**教学文档站 + 源码解析**项目。基于 [VirtualXposed](https://github.com/android-hacker/VirtualXposed)（VirtualApp + epic），逐层拆解免 Root 运行 Xposed 模块的 Android 虚拟化实现（支持 Android 5.0~10.0）。
 
-Introduction
-------------
-**VirtualXposed** is a simple App based on [VirtualApp](https://github.com/asLody/VirtualApp) and [epic](https://github.com/tiann/epic) that allows you to use an Xposed Module without needing to root, unlock the bootloader, or flash a custom system image. (Supports Android 5.0~10.0) 
+[![Build Status](https://github.com/android-security-engineer/VirtualXposed-skills/actions/workflows/android.yml/badge.svg)](https://github.com/android-security-engineer/VirtualXposed-skills/actions/workflows/android.yml)
 
-The only two restriction of VirtualXposed are:
+本仓库不是可运行 App 仓库，分两部分：
 
-1. Unable to modify system, so any Module which modifies system won't be able to work properly.
-2. Currently resource hooks are not supported. (Theming modules use Resource Hooks).
+- `VirtualApp/` —— VirtualXposed 原项目源码（只读参考，`lib` 模块含 464 Java + 96 native 源文件）
+- `website/` —— VitePress 文档站，逐层拆解 VirtualXposed 的原理与源码：[在线访问](https://android-security-engineer.github.io/VirtualXposed-skills/)
 
-Warning
------------
+## 快速开始
 
-Usage for Commercial Purposes are not allowed!!!  Please refer to VirtualApp's [declaration](https://github.com/asLody/VirtualApp).
+### 下载 APK
 
-Usage
--------
+```bash
+gh release download --repo android-security-engineer/VirtualXposed-skills --pattern '*.apk' --dir .
+```
 
-### Preparation
+> 未配置签名 Secret 时 Release 为未签名降级版，Android 7+ 需用 apksigner 自行签名后安装。详见 [下载与构建文档](https://android-security-engineer.github.io/VirtualXposed-skills/dev/build)。
 
-Download the latest APK from the [release page](https://github.com/android-hacker/VirtualXposed/releases), and install it on your Android device.
+### 用 VirtualXposed
 
-### Install APP and Xposed Module
+VirtualXposed 是一个免 Root、免解锁 Bootloader 的 App，让任意 Xposed 模块在普通 App 进程内加载并激活。两大限制：(1) 不支持修改系统；(2) 不支持资源 Hook。
 
-Open VirtualXposed, Click on the **Drawer Button** at the bottom of home page(Or long click the screen), add your desired APP and Xposed Module to VirtualXposed's virtual environment.
+使用步骤：
 
-Note: **All operations（installation of Xposed Module, APP）must be done in VirtualXposed**, otherwise the Xposed Module installed won't take effect. For example, if you install the YouTube app on your system (Your phone's original system, not in VirtualXposed), and then install YouTube AdAway (A YouTube Xposed Module) in VirtualXposed; or you install YouTube in VirtualXposed, and install YouTube AdAway on original system; or both of them are installed on original system, **neither of these three cases will work!**
+1. 下载 APK 安装到 Android 5.0~10.0 设备
+2. 打开 VirtualXposed，点主页底部按钮 → Add App，把目标 App 和 Xposed 模块都装进虚拟环境
+3. 在 VirtualXposed 内的 Xposed Installer 里激活模块
+4. 点 Settings → Reboot 重启 VirtualXposed（无需重启手机）
 
-![How to install](https://raw.githubusercontent.com/tiann/arts/master/vxp_install.gif)
+> ⚠️ 目标 App 和 Xposed 模块**必须都装在 VirtualXposed 虚拟环境内**，任一装在宿主系统都不生效。
 
-There are three ways to install an APP or Xposed Module to VirtualXposed:
+## 文档与源码
 
-1. **Clone an installed app from your original system.** (Click Button at bottom of home page, then click Add App, the first page shows a list of installed apps.)
-2. **Install via an APK file.** (Click Button at bottom of home page, then click Add App, the second page shows APKs found in your sdcard)
-3. **Install via an external file chooser.** (Click Button at bottom of home page, then click Add App, use the floating action button to choose an APK file to install)
+- [文档站](https://android-security-engineer.github.io/VirtualXposed-skills/) —— 入门、架构、功能详解、源码参考
+- [源码参考索引](https://android-security-engineer.github.io/VirtualXposed-skills/reference/) —— 464 Java + 96 native 逐模块解析
+- [本地构建](https://android-security-engineer.github.io/VirtualXposed-skills/dev/build) —— 从源码编译 APK
 
-For Xposed Module, You can install it from Xposed Installer, too.
+## AI Agent 对接
 
-### Activate the Xposed Module
+本仓库为 AI Agent 提供三层对接能力（[详见](https://android-security-engineer.github.io/VirtualXposed-skills/dev/for-agents)）：
 
-Open Xposed Installer in VirtualXposed, go to the module fragment, check the module you want to use:
+- `CLAUDE.md` / `AGENTS.md` —— 项目级上下文
+- `website/public/llms.txt` + `llms-full.txt` + `llms-index.json` —— llms.txt 协议与结构化源码索引
+- `.claude/skills/virtualxposed/` —— Claude Code 只读导航 skill
 
-![How to activate module](https://raw.githubusercontent.com/tiann/arts/master/vxp_activate.gif)
+## Credits
 
-### Reboot
+- [VirtualApp](https://github.com/asLody/VirtualApp)
+- [epic](https://github.com/tiann/epic)
+- [Xposed](https://github.com/rovo89/Xposed)
 
-You only need to reboot VirtualXposed, **There's no need to reboot your phone**; Just click Settings in home page of VirtualXposed, click `Reboot` button, and VirtualXposed will reboot in a blink. 
-
-![How to reboot](https://raw.githubusercontent.com/tiann/arts/master/vxp_reboot.gif)
-
-Supported Modules 
--------------------------
-
-Almost all modules except system-relevant are supported, please try it by yourself :)
-
-Others
--------
-
-### GameGuardian
-
-VirtualXposed also supports GameGuardian, **you should use the separate version for GameGuardian**.(Download it in release page).
-
-[Video Tutorial](https://gameguardian.net/forum/gallery/image/437-no-root-via-virtualxposed-without-error-105-gameguardian/)
-
-### VirusTotal
-
-VirusTotal might report VirtualXposed as a malware, it is stupid, you can refer to my [explanation](https://github.com/android-hacker/VirtualXposed/issues/10).
-
-And obviously, VirtualXposed is open source, so you can refer to the source code. I am sure that it is safe to use.
-
-If you still couldn't believe in me, you can install version [0.8.7](https://github.com/android-hacker/VirtualXposed/releases/tag/0.8.7); VirusTotal reports this version as safe.
-
-Support
------------
-
-Contributions to VirtualXposed are always welcomed!!
-
-For Developers
---------------
-
-- [File a bug](https://github.com/android-hacker/exposed/issues)
-- [Wiki](https://github.com/android-hacker/VirtualXposed/wiki)
-- [Telegram](https://t.me/vxp_devs)
-
-Credits
--------
-
-1. [VirtualApp](https://github.com/asLody/VirtualApp)
-2. [Xposed](https://github.com/rovo89/Xposed)
-3. [And64InlineHook](https://github.com/Rprop/And64InlineHook)
+> 商业用途请遵循 VirtualApp 的 [声明](https://github.com/asLody/VirtualApp)。
