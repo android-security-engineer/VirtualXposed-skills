@@ -9,7 +9,7 @@ description: Navigate the VirtualXposed codebase and documentation. Use when the
 
 ## 知识来源（按优先级）
 
-1. **结构化索引**：`website/public/llms-index.json` —— 全部 Java 类 → 源码文件 → 模块 → 文档链接。查"某类在哪"用这个。
+1. **结构化索引**：`website/public/llms-index.json` —— 全部 464 Java 类（`classes`）+ 96 native 文件（`nativeClasses`）→ 源码文件 → 模块 → 文档链接。查"某类/某文件在哪"用这个。
 2. **站点知识**：`website/public/llms-full.txt` —— 全站知识浓缩单文件。查"某机制整体怎么工作"先读这个。
 3. **源码本体**：`VirtualApp/lib/src/main/java/com/lody/virtual/` —— 细节核对读源码。
 4. **详细文档**：`website/reference/` 下对应模块 Markdown。
@@ -22,12 +22,13 @@ description: Navigate the VirtualXposed codebase and documentation. Use when the
 1. 读 `website/public/llms-index.json`
 2. 在 `classes` 数组中按 `className` 或 `package` 关键词过滤
 3. 返回匹配项的 `sourceUrl`（GitHub 直链）+ `module` + `docLink`
+4. 若查的是 native 文件（如"VMPatch 在哪"、"libc hook 实现"），改查 `nativeClasses` 数组，按 `fileName` 过滤，返回 `sourceUrl` + `/reference/native/` 文档链接
 
 ### 工具 B：按能力追踪实现路径
 
 当用户问"虚拟定位怎么实现的"、"IO 重定向在哪一层"：
 1. 先读 `website/public/llms-full.txt` 第 4 节"核心机制"拿到机制概览
-2. 按 module 在 `llms-index.json` 过滤相关类（如 location → `client/hook/proxies` + `server` + `remote` 三个 module 的 location 相关类）
+2. 按 module 在 `llms-index.json` 过滤相关类（如 location → `client/hook/proxies` + `server` + `remote` 三个 module 的 location 相关类；涉及 native 层如 IO 重定向 → 额外查 `nativeClasses` 里 IOUniformer/SandboxFs 等）
 3. 给出"客户端代理 → 虚拟服务 → 数据类"三层实现链 + 各自源码链接
 
 ### 工具 C：生成 Xposed 模块编写指引
