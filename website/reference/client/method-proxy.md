@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/MethodProxy.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodProxy.java)
 :::
 
-`MethodProxy` 是 VirtualXposed 所有方法代理的抽象基类。每一个需要拦截的系统服务方法，都对应一个 `MethodProxy` 子类——它定义「方法名」「调用前改什么参数」「调用时返回什么」。48 个服务代理里的成百上千个拦截点，本质都是 `MethodProxy` 实例。
+`MethodProxy` 是 VirtualXposed 所有方法代理的抽象基类。每一个需要拦截的系统服务方法，都对应一个 `MethodProxy` 子类——它定义「方法名」「调用前改什么参数」「调用时返回什么」。45 个服务代理里的成百上千个拦截点，本质都是 `MethodProxy` 实例。
 
 ## 核心抽象
 

@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/BinderInvocationStub.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationStub.java)
 :::
 
-`BinderInvocationStub` 继承 [`MethodInvocationStub<IInterface>`](./method-invocation-stub) 并实现 `IBinder`。它是一个**假的 IBinder**——`queryLocalInterface` 返回带满 `MethodProxy` 的动态代理，从而让 `ServiceManager.getService(name)` 拿到的就是这个假 binder。48 个服务代理替换 `ServiceManager.sCache` 的物理基础就是它。
+`BinderInvocationStub` 继承 [`MethodInvocationStub<IInterface>`](./method-invocation-stub) 并实现 `IBinder`。它是一个**假的 IBinder**——`queryLocalInterface` 返回带满 `MethodProxy` 的动态代理，从而让 `ServiceManager.getService(name)` 拿到的就是这个假 binder。45 个服务代理替换 `ServiceManager.sCache` 的物理基础就是它。
 
 ## 与父类的区别
 

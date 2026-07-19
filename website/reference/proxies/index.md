@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/proxies/`](https://github.com/android-security-engineer/VirtualXposed-skills/tree/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies)
 :::
 
-VirtualXposed 在客户端（虚拟 App 进程）用 **48 个服务代理**拦截目标 App 对系统服务的调用。每个代理对应一个 Android 系统服务，把目标 App 的请求重定向到 VirtualXposed 自己的虚拟服务或就地改写参数。
+VirtualXposed 在客户端（虚拟 App 进程）用 **45 个服务代理**拦截目标 App 对系统服务的调用。每个代理对应一个 Android 系统服务，把目标 App 的请求重定向到 VirtualXposed 自己的虚拟服务或就地改写参数。
 
 ## 统一模式
 
@@ -27,7 +27,7 @@ flowchart LR
 | `MethodProxies.java` | 用 `@Inject` 注解批量定义的内部类 MethodProxy 集合（大代理才有） |
 | 辅助类 | 如 location 的 `MockLocationHelper`、`GPSListenerThread` |
 
-## 48 个代理一览
+## 45 个代理一览
 
 | 代理 | 拦截服务 | MethodProxy 数 | 文档 |
 | --- | --- | --- | --- |

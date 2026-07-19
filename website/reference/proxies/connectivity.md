@@ -12,7 +12,7 @@
 
 ## 关键行为
 
-本代理是"占位型"代理：构造时把 `BinderInvocationStub` 写入 `sCache["connectivity"]`，但未注册任何 `MethodProxy`。所有 `ConnectivityManager` 调用经动态代理透传到真实 `IConnectivityManager`，行为不变。占位的目的是为后续版本扩展预留注入点，并保持 48 个服务代理的结构一致。
+本代理是"占位型"代理：构造时把 `BinderInvocationStub` 写入 `sCache["connectivity"]`，但未注册任何 `MethodProxy`。所有 `ConnectivityManager` 调用经动态代理透传到真实 `IConnectivityManager`，行为不变。占位的目的是为后续版本扩展预留注入点，并保持 45 个服务代理的结构一致。
 
 ## 拦截与转发流程
 

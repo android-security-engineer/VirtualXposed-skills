@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/MethodInvocationProxy.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationProxy.java)
 :::
 
-`MethodInvocationProxy<T extends MethodInvocationStub>` 实现 [`IInjector`](./interfaces) 接口，是所有服务代理注入器的抽象基类。它把「持有 stub + 注册 MethodProxy + 执行注入」三件事组合起来，48 个服务代理都继承它。
+`MethodInvocationProxy<T extends MethodInvocationStub>` 实现 [`IInjector`](./interfaces) 接口，是所有服务代理注入器的抽象基类。它把「持有 stub + 注册 MethodProxy + 执行注入」三件事组合起来，45 个服务代理都继承它。
 
 ## 核心结构
 

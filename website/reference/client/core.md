@@ -11,7 +11,7 @@
 | 文件 | 职责 |
 | --- | --- |
 | `VirtualCore.java` | 引擎单例：`startup`/`installPackage`/`launchApp`/`isXposedEnabled`/`detectProcessType`/`setPhoneInfoDelegate` 等 |
-| `InvocationStubManager.java` | 代理注册器：扫描所有 `IInjector` 实现并批量 `inject`，是 48 代理的调度中枢 |
+| `InvocationStubManager.java` | 代理注册器：扫描所有 `IInjector` 实现并批量 `inject`，是 45 代理的调度中枢 |
 | `InstallStrategy.java` | 安装策略接口 |
 | `CrashHandler.java` | 客户端崩溃处理 |
 
@@ -33,7 +33,7 @@ flowchart LR
   INJ --> AMS["ActivityManagerStub"]
   INJ --> PMS["PackageManagerStub"]
   INJ --> LOC["LocationManagerStub"]
-  INJ --> ETC["... 共 48 个"]
+  INJ --> ETC["... 共 45 个"]
   ETC -->|"inject()"| SC["ServiceManager.sCache 替换"]
 ```
 

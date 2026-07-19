@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/`](https://github.com/android-security-engineer/VirtualXposed-skills/tree/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base)（`ReplaceCallingPkgMethodProxy`/`ReplaceLastPkgMethodProxy`/`ReplaceSequencePkgMethodProxy`/`ReplaceSpecPkgMethodProxy`/`ReplaceLastUidMethodProxy`/`ReplaceUidMethodProxy` 等多个文件）
 :::
 
-`Replace*MethodProxy` 是一族现成的 [`MethodProxy`](./method-proxy) 子类，专门做一件事：**把系统服务方法参数里的包名 / UID 改成虚拟环境的值**。它们继承自 [`StaticMethodProxy`](./method-proxy-static)，是 48 个服务代理里复用率最高的一族。
+`Replace*MethodProxy` 是一族现成的 [`MethodProxy`](./method-proxy) 子类，专门做一件事：**把系统服务方法参数里的包名 / UID 改成虚拟环境的值**。它们继承自 [`StaticMethodProxy`](./method-proxy-static)，是 45 个服务代理里复用率最高的一族。
 
 ## 为什么需要改参数
 

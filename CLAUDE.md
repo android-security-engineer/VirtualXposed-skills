@@ -6,7 +6,7 @@
 VirtualXposed 是基于 VirtualApp + epic、在**免 Root** 环境下运行 Xposed 模块的 Android 虚拟化实现（支持 Android 5.0~10.0）。
 
 仓库分两部分：
-- `VirtualApp/` —— 原项目源码（只读参考，`lib` 模块含 478 个 Java + 96 个 native 源文件）
+- `VirtualApp/` —— 原项目源码（只读参考，`lib` 模块含 464 个 Java + 96 个 native 源文件）
 - `website/` —— VitePress 文档站，逐层拆解 VirtualXposed 的原理与源码
 
 ## 工作目录约定
@@ -35,7 +35,7 @@ pnpm dev          # 本地预览
 | `website/architecture/` | 架构总览、进程模型、模块组成 |
 | `website/features/` | 核心机制详解（虚拟化、Hook、Stub、IPC、PMS/AMS 等） |
 | `website/xposed/` | 免 Root Hook 原理、模块加载、epic、资源 Hook 限制 |
-| `website/reference/` | 逐模块源码参考（10 个 index.md 索引，覆盖 481 Java + 96 native） |
+| `website/reference/` | 逐模块源码参考（10 个 index.md 索引，覆盖 464 Java + 96 native） |
 | `website/dev/` | 构建与文档站搭建 |
 
 ## 写文档的硬规则

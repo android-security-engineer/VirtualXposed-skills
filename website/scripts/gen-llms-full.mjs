@@ -31,7 +31,7 @@ let failures = 0;
 for (const target of TARGETS) {
   const text = await readFile(target, 'utf8');
   // 检查不应再出现的旧数字（已被真值取代）
-  const stale = text.match(/\b(481|478|239|144)\b/g);
+  const stale = text.match(/\b(481|478|239|144)\b|48 个|48 代理/g);
   if (stale) {
     console.error(`FAIL ${target}: 残留过时数字 ${[...new Set(stale)].join(', ')}`);
     failures++;

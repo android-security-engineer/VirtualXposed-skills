@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/MethodInvocationStub.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationStub.java)
 :::
 
-`MethodInvocationStub<T>` 是 Hook 框架的**分发器**。它用 JDK 动态代理（`Proxy.newProxyInstance`）包住一个真实的服务接口，内部用 `HookInvocationHandler` 按**方法名**把调用路由到注册的 [`MethodProxy`](./method-proxy)。所有 48 个服务代理的分发都靠它。
+`MethodInvocationStub<T>` 是 Hook 框架的**分发器**。它用 JDK 动态代理（`Proxy.newProxyInstance`）包住一个真实的服务接口，内部用 `HookInvocationHandler` 按**方法名**把调用路由到注册的 [`MethodProxy`](./method-proxy)。所有 45 个服务代理的分发都靠它。
 
 ## 核心 API
 

@@ -13,16 +13,16 @@ VirtualXposed 是 Xposed 模块的**运行容器**。它自身**不提供** `IXp
 
 | 模块 | 源码路径 | 文档 | 职责 |
 |------|---------|------|------|
-| 服务代理 | client/hook/proxies/ | /reference/proxies/ | 48 个系统服务客户端 Hook 注入 |
+| 服务代理 | client/hook/proxies/ | /reference/proxies/ | 45 个系统服务客户端 Hook 注入 |
 | 虚拟服务 | server/ | /reference/server/ | server 进程重实现的系统服务 |
 | 客户端基建 | client/ | /reference/client/ | Hook 框架/IPC/Stub/修复器 |
-| 反射镜像 | mirror/ | /reference/mirror/ | 144 影子类包装隐藏 API |
+| 反射镜像 | mirror/ | /reference/mirror/ | 185 个 mirror 类包装隐藏 API |
 | 工具数据 | helper/ · remote/ | /reference/helper/ /reference/remote/ | 兼容工具/集合/跨进程数据类 |
 | Native 层 | jni/ | /reference/native/ | libc hook/ART hook/inline hook |
 
-`llms-index.json` 实际索引 239 个核心 Java 类（lib/src 下含 public 声明的类），分布：client(76) + proxies(57) + helper(40) + server(43) + remote(15) + os(5) + 顶层杂项(3)。
+`llms-index.json` 实际索引 464 个 Java 类（virtual 下 279 + mirror 下 185，含包级私有类）+ 96 个 native 文件，分布：client(84) + proxies(68) + server(60) + mirror(185) + helper(44) + remote(15) + os(5) + 顶层杂项(3)。
 
-## 3. 48 个系统服务代理（部分，完整表见 /reference/proxies/）
+## 3. 45 个系统服务代理（部分，完整表见 /reference/proxies/）
 
 | 代理 | 拦截服务 | 典型用途 |
 |------|---------|---------|

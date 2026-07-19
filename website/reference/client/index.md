@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/`](https://github.com/android-security-engineer/VirtualXposed-skills/tree/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client)
 :::
 
-客户端（虚拟 App 进程 + 主进程）的基础设施——Hook 框架基类、IPC 客户端代理、Stub 组件、修复器、运行环境。这是支撑 48 个 [服务代理](../proxies/) 运转的骨架。
+客户端（虚拟 App 进程 + 主进程）的基础设施——Hook 框架基类、IPC 客户端代理、Stub 组件、修复器、运行环境。这是支撑 45 个 [服务代理](../proxies/) 运转的骨架。
 
 ## 模块总览
 
@@ -78,4 +78,4 @@ flowchart LR
 | 3 | [`InvocationStubManager`](./invocation-stub-manager) | 48 代理如何被批量注入 |
 | 4 | [`hook/base`](./hook-base) | Hook 框架基类（`MethodProxy` 等） |
 | 5 | [`stub`](./stub) | Stub Activity/CP/Service 占位还原 |
-| 6 | [48 个服务代理](../proxies/) | 各系统服务如何被劫持 |
+| 6 | [45 个服务代理](../proxies/) | 各系统服务如何被劫持 |

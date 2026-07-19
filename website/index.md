@@ -4,7 +4,7 @@ layout: home
 hero:
   name: VirtualXposed
   text: 原理与源码解析
-  tagline: 基于 VirtualApp + epic，在免 Root 环境下运行 Xposed 模块的 Android 虚拟化实现。本站是一份逐层拆解的教学文档，覆盖 481 个 Java 类与 96 个 native 源文件的实现细节。
+  tagline: 基于 VirtualApp + epic，在免 Root 环境下运行 Xposed 模块的 Android 虚拟化实现。本站是一份逐层拆解的教学文档，覆盖 464 个 Java 类与 96 个 native 源文件的实现细节。
   image:
     src: /logo.svg
     alt: VirtualXposed
@@ -28,7 +28,7 @@ features:
     details: 在自身进程内用 Java 重新实现 AMS、PMS、AccountManager、LocationManager 等系统服务，让任意 App “安装”进虚拟环境独立运行。
   - icon: 🔌
     title: 系统服务劫持
-    details: 通过 Java 动态代理替换 ServiceManager 缓存中的 IBinder，按方法名注册 MethodProxy 拦截每一个系统调用，返回伪造数据。覆盖 48 个系统服务代理。
+    details: 通过 Java 动态代理替换 ServiceManager 缓存中的 IBinder，按方法名注册 MethodProxy 拦截每一个系统调用，返回伪造数据。覆盖 45 个系统服务代理。
   - icon: 🎭
     title: Stub Activity 占位
     details: 预注册 100 个占位 Activity 欺骗真实 AMS，再用 H Callback 在主线程把占位 Intent 还原为虚拟 App 的真实 Intent。
@@ -40,7 +40,7 @@ features:
     details: 借助 epic 在 ART 运行时做 inline hook，结合 ExposedBridge 还原 Xposed API，让现成 Xposed 模块零改动接入。
   - icon: 🪞
     title: 反射镜像 mirror
-    details: 144 个影子类把 Android 隐藏 API 包装成类型安全的静态字段访问，配合 free_reflection 解封 Android 9+ 反射限制。
+    details: 185 个 mirror 类把 Android 隐藏 API 包装成类型安全的静态字段访问，配合 free_reflection 解封 Android 9+ 反射限制。
   - icon: 🦀
     title: Native 层 libva++.so
     details: 96 个 native 源文件实现 libc 文件 hook、ART 方法 hook、x86_64/arm64 两套 inline hook 引擎，是数据隔离与权限伪装的物理基础。

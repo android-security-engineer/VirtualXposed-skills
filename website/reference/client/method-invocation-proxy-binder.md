@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/hook/base/BinderInvocationProxy.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/BinderInvocationProxy.java)
 :::
 
-`BinderInvocationProxy` 继承 [`MethodInvocationProxy<BinderInvocationStub>`](./method-invocation-proxy)，是 48 个服务代理注入器的**实际基类**。它专门负责「替换 `ServiceManager` 缓存里的真 binder」这一步。
+`BinderInvocationProxy` 继承 [`MethodInvocationProxy<BinderInvocationStub>`](./method-invocation-proxy)，是 45 个服务代理注入器的**实际基类**。它专门负责「替换 `ServiceManager` 缓存里的真 binder」这一步。
 
 ## 构造
 

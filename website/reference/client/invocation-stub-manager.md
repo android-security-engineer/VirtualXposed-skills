@@ -4,7 +4,7 @@
 [`src/main/java/com/lody/virtual/client/core/InvocationStubManager.java`](https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/core/InvocationStubManager.java)
 :::
 
-`InvocationStubManager` 是 48 个系统服务代理的**调度中枢**——单例，扫描所有 `IInjector` 实现并批量 `inject()`，把虚拟 Binder 替换进 `ServiceManager.sCache`，完成系统服务劫持。它是 `bindApplication` 流程的关键一环。
+`InvocationStubManager` 是 45 个系统服务代理的**调度中枢**——单例，扫描所有 `IInjector` 实现并批量 `inject()`，把虚拟 Binder 替换进 `ServiceManager.sCache`，完成系统服务劫持。它是 `bindApplication` 流程的关键一环。
 
 ## 单例与状态
 
@@ -93,4 +93,4 @@ sequenceDiagram
 - [`IInjector`](./interfaces)：所有注入器实现的契约。
 - [`MethodInvocationStub`](./method-invocation-stub) / [`BinderInvocationStub`](./binder-invocation-stub)：注入器的两种实现基类。
 - [系统服务 Hook](../../features/service-hook)：整体机制总览。
-- [48 个服务代理](../proxies/)：各注入器的详细文档。
+- [45 个服务代理](../proxies/)：各注入器的详细文档。

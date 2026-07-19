@@ -1,7 +1,7 @@
 # VirtualXposed 完整知识浓缩版
 
 本文件是 VirtualXposed 教学站的全部知识点浓缩，供 AI Agent 单次读取获取全貌。
-所有数字（481 Java / 96 native / 48 服务代理 / 144 镜像类）均来自源码与文档真实统计。
+所有数字（464 Java / 96 native / 45 服务代理 / 8 模块）均由 gen-llms-index.mjs 从源码静态扫描生成，gen-llms-full.mjs 校验。
 
 ## 1. 项目定位
 
@@ -11,13 +11,13 @@ VirtualXposed = VirtualApp（应用沙箱虚拟化）+ epic（ART inline hook）
 
 ## 2. 架构（六大模块）
 
-VirtualXposed 的 lib 模块（478 Java + 96 native 源文件）分为：
-- 🔌 服务代理 client/hook/proxies/（~80 文件）：48 个系统服务的客户端 Hook 注入
-- 🖥️ 虚拟服务 server/（~90 文件）：server 进程里重新实现的系统服务（AMS/PMS/AccountManager 等）
-- ⚙️ 客户端基建 client/（~60 文件）：Hook 框架、IPC 桥、Stub、修复器
-- 🪞 反射镜像 mirror/（~120 文件，144 影子类）：Android 隐藏 API 的类型安全镜像
-- 🧰 工具与数据 helper/ · remote/（~50 文件）：兼容工具、集合、跨进程数据类
-- 🦀 Native 层 jni/（90 文件）：libc hook / ART hook / inline hook（x86_64 + arm64）
+VirtualXposed 的 lib 模块（464 Java + 96 native 源文件，含 com/lody/mirror 的 185 个反射镜像类）分为：
+- 🔌 服务代理 client/hook/proxies/（68 文件，45 个服务子目录）：系统服务的客户端 Hook 注入
+- 🖥️ 虚拟服务 server/（60 文件）：server 进程里重新实现的系统服务（AMS/PMS/AccountManager 等）
+- ⚙️ 客户端基建 client/（84 文件，不含 proxies）：Hook 框架、IPC 桥、Stub、修复器
+- 🪞 反射镜像 mirror/（185 文件）：Android 隐藏 API 的类型安全镜像（Ref* 系列包装）
+- 🧰 工具与数据 helper/ · remote/（44 + 15 文件）：兼容工具、集合、跨进程数据类
+- 🦀 Native 层 jni/（96 文件）：libc hook / ART hook / inline hook（x86_64 + arm64）
 
 ## 3. 进程模型
 
@@ -30,9 +30,9 @@ VirtualXposed 的 lib 模块（478 Java + 96 native 源文件）分为：
 ### 4.1 应用虚拟化
 在自身进程内用 Java 重新实现 AMS/PMS/AccountManager/LocationManager 等，让任意 App "安装"进虚拟环境独立运行。
 
-### 4.2 系统服务 Hook（48 个代理）
+### 4.2 系统服务 Hook（45 个代理）
 统一模式：目标 App → ServiceManager.sCache（已被替换）→ 动态代理 IBinder → XxxStub(BinderInvocationProxy) → 按方法名分发到 MethodProxy 列表 → 改写参数/转发到虚拟服务或真实系统。
-覆盖：account, alarm, am, appops, audio, clipboard, connectivity, devicepolicy, display, fingerprint, location, notification, pm, telephony, wifi 等 48 个服务。
+覆盖：account, alarm, am, appops, audio, clipboard, connectivity, devicepolicy, display, fingerprint, location, notification, pm, telephony, wifi 等 45 个服务。
 
 ### 4.3 Stub Activity 机制
 预注册 100 个占位 Activity 欺骗真实 AMS，再用 H Callback 在主线程把占位 Intent 还原为虚拟 App 的真实 Intent。
@@ -44,10 +44,10 @@ VirtualXposed 自建 Binder 通信，把虚拟 App 的系统调用路由到 serv
 native 层 hook libc 文件接口（open/stat 等），把 /data/data/<pkg>、/sdcard 等路径透明重定向到虚拟数据目录，实现数据隔离。
 
 ### 4.6 反射镜像 mirror
-144 个影子类把 Android 隐藏 API 包装成类型安全的静态字段访问，配合 free_reflection 解封 Android 9+ 反射限制。
+185 个 mirror 类把 Android 隐藏 API 包装成类型安全的静态字段访问，配合 free_reflection 解封 Android 9+ 反射限制。
 
 ### 4.7 Native 层 libva++.so
-96 个 native 源文件：libc 文件 hook（IOUniformer/SandboxFs）、ART 方法 hook（VMPatch）、x86_64（Substrate）+ arm64（A64InlineHook）两套 inline hook 引擎、fake_dlfcn 绕 linker、SymbolFinder 符号查找。
+96 个 native 源文件（.cpp/.c/.h/.hpp）：libc 文件 hook（IOUniformer/SandboxFs）、ART 方法 hook（VMPatch）、x86_64（Substrate）+ arm64（A64InlineHook）两套 inline hook 引擎、fake_dlfcn 绕 linker、SymbolFinder 符号查找。
 
 ## 5. Xposed 集成
 
