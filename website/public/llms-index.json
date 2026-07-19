@@ -1,7 +1,12 @@
 {
-  "generatedFrom": "VirtualApp/lib/src/main/java/com/lody/virtual",
-  "fileCount": 239,
-  "moduleCount": 7,
+  "generatedFrom": [
+    "VirtualApp/lib/src/main/java/com/lody/virtual",
+    "VirtualApp/lib/src/main/java/mirror",
+    "VirtualApp/lib/src/main/jni"
+  ],
+  "javaFileCount": 464,
+  "nativeFileCount": 96,
+  "moduleCount": 8,
   "modules": {
     "client/hook/proxies": "/reference/proxies/",
     "client": "/reference/client/",
@@ -9,7 +14,8 @@
     "mirror": "/reference/mirror/",
     "helper": "/reference/helper/",
     "remote": "/reference/remote/",
-    "os": "/reference/helper/"
+    "os": "/reference/helper/",
+    "native": "/reference/native/"
   },
   "classes": [
     {
@@ -133,6 +139,14 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "GPSStateline",
+      "package": "com.lody.virtual.client.env",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/env/GPSStateline.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/env/GPSStateline.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "SpecialComponentList",
       "package": "com.lody.virtual.client.env",
       "module": "client",
@@ -197,6 +211,22 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "Inject",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/Inject.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/Inject.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "LogInvocation",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/LogInvocation.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/LogInvocation.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "MethodBox",
       "package": "com.lody.virtual.client.hook.base",
       "module": "client",
@@ -205,7 +235,7 @@
       "docLink": "/reference/client/"
     },
     {
-      "className": "MethodInvocationProxy",
+      "className": "is",
       "package": "com.lody.virtual.client.hook.base",
       "module": "client",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/MethodInvocationProxy.java",
@@ -285,6 +315,14 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "SkipInject",
+      "package": "com.lody.virtual.client.hook.base",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/SkipInject.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/base/SkipInject.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "StaticMethodProxy",
       "package": "com.lody.virtual.client.hook.base",
       "module": "client",
@@ -333,6 +371,14 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "DownloadProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/DownloadProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/DownloadProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "ExternalProviderHook",
       "package": "com.lody.virtual.client.hook.providers",
       "module": "client",
@@ -349,11 +395,27 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "MediaProviderHook",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/MediaProviderHook.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/MediaProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "ProviderHook",
       "package": "com.lody.virtual.client.hook.providers",
       "module": "client",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ProviderHook.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/ProviderHook.java",
+      "docLink": "/reference/client/"
+    },
+    {
+      "className": "QueryRedirectCursor",
+      "package": "com.lody.virtual.client.hook.providers",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/QueryRedirectCursor.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/providers/QueryRedirectCursor.java",
       "docLink": "/reference/client/"
     },
     {
@@ -402,6 +464,14 @@
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/HCallbackStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/HCallbackStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.am",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/am/MethodProxies.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -485,6 +555,14 @@
       "docLink": "/reference/proxies/"
     },
     {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.content",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/content/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/content/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
       "className": "ContextHubServiceStub",
       "package": "com.lody.virtual.client.hook.proxies.context_hub",
       "module": "client/hook/proxies",
@@ -549,6 +627,14 @@
       "docLink": "/reference/proxies/"
     },
     {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.input",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/input/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/input/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
       "className": "ISmsStub",
       "package": "com.lody.virtual.client.hook.proxies.isms",
       "module": "client/hook/proxies",
@@ -578,6 +664,14 @@
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/LibCoreStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/LibCoreStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.libcore",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/libcore/MethodProxies.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -637,6 +731,14 @@
       "docLink": "/reference/proxies/"
     },
     {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.mount",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/mount/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/mount/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
       "className": "MountServiceStub",
       "package": "com.lody.virtual.client.hook.proxies.mount",
       "module": "client/hook/proxies",
@@ -650,6 +752,14 @@
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/network/NetworkManagementStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/network/NetworkManagementStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.notification",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/notification/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/notification/MethodProxies.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -677,6 +787,14 @@
       "docLink": "/reference/proxies/"
     },
     {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.phonesubinfo",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/phonesubinfo/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/phonesubinfo/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
       "className": "PhoneSubInfoStub",
       "package": "com.lody.virtual.client.hook.proxies.phonesubinfo",
       "module": "client/hook/proxies",
@@ -690,6 +808,14 @@
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/LauncherAppsStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/LauncherAppsStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.pm",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/pm/MethodProxies.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -730,6 +856,14 @@
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/shortcut/ShortcutServiceStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/shortcut/ShortcutServiceStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.telephony",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/telephony/MethodProxies.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -805,11 +939,27 @@
       "docLink": "/reference/proxies/"
     },
     {
+      "className": "MethodProxies",
+      "package": "com.lody.virtual.client.hook.proxies.window",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/MethodProxies.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/MethodProxies.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
       "className": "WindowManagerStub",
       "package": "com.lody.virtual.client.hook.proxies.window",
       "module": "client/hook/proxies",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/WindowManagerStub.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/WindowManagerStub.java",
+      "docLink": "/reference/proxies/"
+    },
+    {
+      "className": "BaseMethodProxy",
+      "package": "com.lody.virtual.client.hook.proxies.window.session",
+      "module": "client/hook/proxies",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/session/BaseMethodProxy.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/proxies/window/session/BaseMethodProxy.java",
       "docLink": "/reference/proxies/"
     },
     {
@@ -845,6 +995,14 @@
       "docLink": "/reference/client/"
     },
     {
+      "className": "StubBinder",
+      "package": "com.lody.virtual.client.hook.secondary",
+      "module": "client",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/StubBinder.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/client/hook/secondary/StubBinder.java",
+      "docLink": "/reference/client/"
+    },
+    {
       "className": "MethodParameterUtils",
       "package": "com.lody.virtual.client.hook.utils",
       "module": "client",
@@ -853,7 +1011,7 @@
       "docLink": "/reference/client/"
     },
     {
-      "className": "IInjector",
+      "className": "will",
       "package": "com.lody.virtual.client.interfaces",
       "module": "client",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/client/interfaces/IInjector.java",
@@ -1141,6 +1299,14 @@
       "docLink": "/reference/helper/"
     },
     {
+      "className": "ContainerHelpers",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ContainerHelpers.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/ContainerHelpers.java",
+      "docLink": "/reference/helper/"
+    },
+    {
       "className": "IntArray",
       "package": "com.lody.virtual.helper.collection",
       "module": "helper",
@@ -1149,7 +1315,15 @@
       "docLink": "/reference/helper/"
     },
     {
-      "className": "SimpleArrayMap",
+      "className": "MapCollections",
+      "package": "com.lody.virtual.helper.collection",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/MapCollections.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/MapCollections.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "can",
       "package": "com.lody.virtual.helper.collection",
       "module": "helper",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/collection/SimpleArrayMap.java",
@@ -1285,7 +1459,7 @@
       "docLink": "/reference/helper/"
     },
     {
-      "className": "AtomicFile",
+      "className": "for",
       "package": "com.lody.virtual.helper.utils",
       "module": "helper",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/AtomicFile.java",
@@ -1397,7 +1571,7 @@
       "docLink": "/reference/helper/"
     },
     {
-      "className": "Singleton",
+      "className": "for",
       "package": "com.lody.virtual.helper.utils",
       "module": "helper",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/Singleton.java",
@@ -1418,6 +1592,22 @@
       "module": "helper",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/XmlSerializerAndParser.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/XmlSerializerAndParser.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "FakeDeviceMark",
+      "package": "com.lody.virtual.helper.utils.marks",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/marks/FakeDeviceMark.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/marks/FakeDeviceMark.java",
+      "docLink": "/reference/helper/"
+    },
+    {
+      "className": "FakeLocMark",
+      "package": "com.lody.virtual.helper.utils.marks",
+      "module": "helper",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/marks/FakeLocMark.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/helper/utils/marks/FakeLocMark.java",
       "docLink": "/reference/helper/"
     },
     {
@@ -1549,7 +1739,7 @@
       "docLink": "/reference/remote/"
     },
     {
-      "className": "VParceledListSlice",
+      "className": "name",
       "package": "com.lody.virtual.remote",
       "module": "remote",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/remote/VParceledListSlice.java",
@@ -1589,7 +1779,7 @@
       "docLink": "/reference/server/"
     },
     {
-      "className": "IJobScheduler",
+      "className": "that",
       "package": "com.lody.virtual.server",
       "module": "server",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/IJobScheduler.java",
@@ -1645,6 +1835,30 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "ActivityRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ActivityRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ActivityRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ActivityStack",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ActivityStack.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ActivityStack.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "AppBindRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/AppBindRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/AppBindRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "AttributeCache",
       "package": "com.lody.virtual.server.am",
       "module": "server",
@@ -1661,6 +1875,14 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "ConnectionRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ConnectionRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ConnectionRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "PendingIntents",
       "package": "com.lody.virtual.server.am",
       "module": "server",
@@ -1669,11 +1891,35 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "ProcessMap",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ProcessMap.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ProcessMap.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ProcessRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ProcessRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ProcessRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "ServiceRecord",
       "package": "com.lody.virtual.server.am",
       "module": "server",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ServiceRecord.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/ServiceRecord.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "TaskRecord",
+      "package": "com.lody.virtual.server.am",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/am/TaskRecord.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/am/TaskRecord.java",
       "docLink": "/reference/server/"
     },
     {
@@ -1733,11 +1979,67 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "NotificationCompatCompatV14",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompatCompatV14.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompatCompatV14.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "NotificationCompatCompatV21",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompatCompatV21.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationCompatCompatV21.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "NotificationFixer",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationFixer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/NotificationFixer.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "PendIntentCompat",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/PendIntentCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/PendIntentCompat.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ReflectionActionCompat",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/ReflectionActionCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/ReflectionActionCompat.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "RemoteViewsFixer",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/RemoteViewsFixer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/RemoteViewsFixer.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "VNotificationManagerService",
       "package": "com.lody.virtual.server.notification",
       "module": "server",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/VNotificationManagerService.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/VNotificationManagerService.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "WidthCompat",
+      "package": "com.lody.virtual.server.notification",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/WidthCompat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/notification/WidthCompat.java",
       "docLink": "/reference/server/"
     },
     {
@@ -1765,6 +2067,14 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "PackagePersistenceLayer",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackagePersistenceLayer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PackagePersistenceLayer.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "PackageSetting",
       "package": "com.lody.virtual.server.pm",
       "module": "server",
@@ -1786,6 +2096,14 @@
       "module": "server",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PrivilegeAppOptimizer.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/PrivilegeAppOptimizer.java",
+      "docLink": "/reference/server/"
+    },
+    {
+      "className": "ProviderIntentResolver",
+      "package": "com.lody.virtual.server.pm",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/ProviderIntentResolver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/pm/ProviderIntentResolver.java",
       "docLink": "/reference/server/"
     },
     {
@@ -1917,12 +2235,1982 @@
       "docLink": "/reference/server/"
     },
     {
+      "className": "VSPersistenceLayer",
+      "package": "com.lody.virtual.server.vs",
+      "module": "server",
+      "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VSPersistenceLayer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VSPersistenceLayer.java",
+      "docLink": "/reference/server/"
+    },
+    {
       "className": "VirtualStorageService",
       "package": "com.lody.virtual.server.vs",
       "module": "server",
       "sourcePath": "VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VirtualStorageService.java",
       "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/com/lody/virtual/server/vs/VirtualStorageService.java",
       "docLink": "/reference/server/"
+    },
+    {
+      "className": "MethodParams",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/MethodParams.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/MethodParams.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "MethodReflectParams",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/MethodReflectParams.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/MethodReflectParams.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefBoolean",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefBoolean.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefBoolean.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefClass",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefClass.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefClass.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefConstructor",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefConstructor.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefConstructor.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefDouble",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefDouble.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefDouble.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefFloat",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefFloat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefFloat.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefInt",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefInt.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefInt.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefLong",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefLong.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefLong.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefMethod",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefMethod.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefMethod.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefObject",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefObject.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefObject.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefStaticInt",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefStaticInt.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefStaticInt.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefStaticMethod",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefStaticMethod.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefStaticMethod.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RefStaticObject",
+      "package": "mirror",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/RefStaticObject.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/RefStaticObject.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAccountManager",
+      "package": "mirror.android.accounts",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/accounts/IAccountManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/accounts/IAccountManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Activity",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/Activity.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/Activity.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ActivityManagerNative",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ActivityManagerNative.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ActivityManagerNative.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ActivityManagerOreo",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ActivityManagerOreo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ActivityManagerOreo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ActivityThread",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ActivityThread.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ActivityThread.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ActivityThreadNMR1",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ActivityThreadNMR1.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ActivityThreadNMR1.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ApplicationThreadNative",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ApplicationThreadNative.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ApplicationThreadNative.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContextImpl",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ContextImpl.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ContextImpl.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContextImplICS",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ContextImplICS.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ContextImplICS.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContextImplKitkat",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ContextImplKitkat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ContextImplKitkat.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IActivityManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IActivityManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IActivityManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IActivityManagerICS",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerICS.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerICS.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IActivityManagerL",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerL.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerL.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IActivityManagerN",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerN.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IActivityManagerN.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IActivityTaskManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IActivityTaskManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IActivityTaskManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAlarmManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IAlarmManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IAlarmManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IApplicationThread",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThread.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThread.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IApplicationThreadICSMR1",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadICSMR1.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadICSMR1.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IApplicationThreadJBMR1",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadJBMR1.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadJBMR1.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IApplicationThreadKitkat",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadKitkat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadKitkat.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IApplicationThreadOreo",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadOreo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IApplicationThreadOreo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ISearchManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ISearchManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ISearchManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IServiceConnectionO",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IServiceConnectionO.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IServiceConnectionO.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IUsageStatsManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/IUsageStatsManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/IUsageStatsManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "LoadedApk",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/LoadedApk.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/LoadedApk.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "LoadedApkHuaWei",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/LoadedApkHuaWei.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/LoadedApkHuaWei.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Notification",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/Notification.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/Notification.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NotificationL",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/NotificationL.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/NotificationL.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NotificationM",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/NotificationM.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/NotificationM.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NotificationManager",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/NotificationManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/NotificationManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PendingIntentJBMR2",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/PendingIntentJBMR2.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/PendingIntentJBMR2.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ServiceStartArgs",
+      "package": "mirror.android.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/ServiceStartArgs.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/ServiceStartArgs.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IDevicePolicyManager",
+      "package": "mirror.android.app.admin",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/admin/IDevicePolicyManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/admin/IDevicePolicyManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IBackupManager",
+      "package": "mirror.android.app.backup",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/backup/IBackupManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/backup/IBackupManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IJobScheduler",
+      "package": "mirror.android.app.job",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/job/IJobScheduler.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/job/IJobScheduler.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "JobInfo",
+      "package": "mirror.android.app.job",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/job/JobInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/job/JobInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "JobParameters",
+      "package": "mirror.android.app.job",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/job/JobParameters.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/job/JobParameters.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "JobWorkItem",
+      "package": "mirror.android.app.job",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/app/job/JobWorkItem.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/app/job/JobWorkItem.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IBluetooth",
+      "package": "mirror.android.bluetooth",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/bluetooth/IBluetooth.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/bluetooth/IBluetooth.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "BroadcastReceiver",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/BroadcastReceiver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/BroadcastReceiver.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ClipboardManager",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ClipboardManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ClipboardManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ClipboardManagerOreo",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ClipboardManagerOreo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ClipboardManagerOreo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContentProviderClient",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderClient.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderClient.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContentProviderHolderOreo",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderHolderOreo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderHolderOreo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContentProviderNative",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderNative.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ContentProviderNative.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContentResolver",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ContentResolver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ContentResolver.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ContentResolverJBMR2",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/ContentResolverJBMR2.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/ContentResolverJBMR2.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IClipboard",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IClipboard.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IClipboard.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IContentProvider",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IContentProvider.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IContentProvider.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IContentService",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IContentService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IContentService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IIntentReceiver",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IIntentReceiver.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IIntentReceiver.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IIntentReceiverJB",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IIntentReceiverJB.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IIntentReceiverJB.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IRestrictionsManager",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IRestrictionsManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IRestrictionsManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IntentFilter",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/IntentFilter.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/IntentFilter.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SyncAdapterType",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/SyncAdapterType.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/SyncAdapterType.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SyncAdapterTypeN",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/SyncAdapterTypeN.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/SyncAdapterTypeN.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SyncInfo",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/SyncInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/SyncInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SyncRequest",
+      "package": "mirror.android.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/SyncRequest.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/SyncRequest.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ApplicationInfoL",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ApplicationInfoL.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ApplicationInfoL.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ApplicationInfoN",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ApplicationInfoN.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ApplicationInfoN.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ILauncherApps",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ILauncherApps.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ILauncherApps.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IShortcutService",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/IShortcutService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/IShortcutService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "LauncherApps",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/LauncherApps.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/LauncherApps.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageInstaller",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageInstaller.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageInstaller.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParser",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParser.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParser.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserJellyBean",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserJellyBean.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserJellyBean.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserJellyBean17",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserJellyBean17.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserJellyBean17.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserLollipop",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserLollipop.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserLollipop.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserLollipop22",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserLollipop22.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserLollipop22.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserMarshmallow",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserMarshmallow.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserMarshmallow.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserNougat",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserNougat.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserNougat.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageParserP28",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserP28.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageParserP28.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PackageUserState",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageUserState.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/PackageUserState.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ParceledListSlice",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ParceledListSlice.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ParceledListSlice.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ParceledListSliceJBMR2",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ParceledListSliceJBMR2.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ParceledListSliceJBMR2.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ShortcutInfo",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/ShortcutInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/ShortcutInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "UserInfo",
+      "package": "mirror.android.content.pm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/pm/UserInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/pm/UserInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "AssetManager",
+      "package": "mirror.android.content.res",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/res/AssetManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/res/AssetManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CompatibilityInfo",
+      "package": "mirror.android.content.res",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/content/res/CompatibilityInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/content/res/CompatibilityInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "DdmHandleAppName",
+      "package": "mirror.android.ddm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/ddm/DdmHandleAppName.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/ddm/DdmHandleAppName.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "DdmHandleAppNameJBMR1",
+      "package": "mirror.android.ddm",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/ddm/DdmHandleAppNameJBMR1.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/ddm/DdmHandleAppNameJBMR1.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Icon",
+      "package": "mirror.android.graphics.drawable",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/graphics/drawable/Icon.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/graphics/drawable/Icon.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "DisplayManagerGlobal",
+      "package": "mirror.android.hardware.display",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/hardware/display/DisplayManagerGlobal.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/hardware/display/DisplayManagerGlobal.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IDisplayManager",
+      "package": "mirror.android.hardware.display",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/hardware/display/IDisplayManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/hardware/display/IDisplayManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IFingerprintService",
+      "package": "mirror.android.hardware.fingerprint",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/hardware/fingerprint/IFingerprintService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/hardware/fingerprint/IFingerprintService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IContextHubService",
+      "package": "mirror.android.hardware.location",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/hardware/location/IContextHubService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/hardware/location/IContextHubService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ILocationListener",
+      "package": "mirror.android.location",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/location/ILocationListener.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/location/ILocationListener.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ILocationManager",
+      "package": "mirror.android.location",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/location/ILocationManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/location/ILocationManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "LocationManager",
+      "package": "mirror.android.location",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/location/LocationManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/location/LocationManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "LocationRequestL",
+      "package": "mirror.android.location",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/location/LocationRequestL.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/location/LocationRequestL.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "AudioManager",
+      "package": "mirror.android.media",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/media/AudioManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/media/AudioManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAudioService",
+      "package": "mirror.android.media",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/media/IAudioService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/media/IAudioService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IMediaRouterService",
+      "package": "mirror.android.media",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/media/IMediaRouterService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/media/IMediaRouterService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "MediaRouter",
+      "package": "mirror.android.media",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/media/MediaRouter.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/media/MediaRouter.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ISessionManager",
+      "package": "mirror.android.media.session",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/media/session/ISessionManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/media/session/ISessionManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IConnectivityManager",
+      "package": "mirror.android.net",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/IConnectivityManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/IConnectivityManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NetworkInfo",
+      "package": "mirror.android.net",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/NetworkInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/NetworkInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IWifiManager",
+      "package": "mirror.android.net.wifi",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/wifi/IWifiManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/wifi/IWifiManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "WifiInfo",
+      "package": "mirror.android.net.wifi",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "WifiScanner",
+      "package": "mirror.android.net.wifi",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiScanner.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiScanner.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "WifiSsid",
+      "package": "mirror.android.net.wifi",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiSsid.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/net/wifi/WifiSsid.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "BaseBundle",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/BaseBundle.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/BaseBundle.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Build",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/Build.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/Build.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Bundle",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/Bundle.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/Bundle.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "BundleICS",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/BundleICS.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/BundleICS.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Handler",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/Handler.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/Handler.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IDeviceIdentifiersPolicyService",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/IDeviceIdentifiersPolicyService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/IDeviceIdentifiersPolicyService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "INetworkManagementService",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/INetworkManagementService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/INetworkManagementService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IPowerManager",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/IPowerManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/IPowerManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IUserManager",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/IUserManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/IUserManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Message",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/Message.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/Message.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Process",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/Process.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/Process.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ServiceManager",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/ServiceManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/ServiceManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "StrictMode",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/StrictMode.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/StrictMode.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "UserHandle",
+      "package": "mirror.android.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/UserHandle.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/UserHandle.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IMountService",
+      "package": "mirror.android.os.mount",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/mount/IMountService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/mount/IMountService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IStorageManager",
+      "package": "mirror.android.os.storage",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/os/storage/IStorageManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/os/storage/IStorageManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Settings",
+      "package": "mirror.android.providers",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/providers/Settings.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/providers/Settings.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RenderScriptCacheDir",
+      "package": "mirror.android.renderscript",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/renderscript/RenderScriptCacheDir.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/renderscript/RenderScriptCacheDir.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ReceiverResourceLP",
+      "package": "mirror.android.rms.resource",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceLP.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceLP.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ReceiverResourceM",
+      "package": "mirror.android.rms.resource",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceM.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceM.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ReceiverResourceN",
+      "package": "mirror.android.rms.resource",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceN.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/rms/resource/ReceiverResourceN.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IPersistentDataBlockService",
+      "package": "mirror.android.service.persistentdata",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/service/persistentdata/IPersistentDataBlockService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/service/persistentdata/IPersistentDataBlockService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellIdentityCdma",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellIdentityCdma.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellIdentityCdma.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellIdentityGsm",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellIdentityGsm.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellIdentityGsm.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellInfoCdma",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellInfoCdma.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellInfoCdma.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellInfoGsm",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellInfoGsm.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellInfoGsm.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellSignalStrengthCdma",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellSignalStrengthCdma.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellSignalStrengthCdma.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "CellSignalStrengthGsm",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/CellSignalStrengthGsm.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/CellSignalStrengthGsm.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NeighboringCellInfo",
+      "package": "mirror.android.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/telephony/NeighboringCellInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/telephony/NeighboringCellInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Singleton",
+      "package": "mirror.android.util",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/util/Singleton.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/util/Singleton.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Display",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/Display.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/Display.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "HardwareRenderer",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/HardwareRenderer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/HardwareRenderer.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAutoFillManager",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/IAutoFillManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/IAutoFillManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IGraphicsStats",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/IGraphicsStats.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/IGraphicsStats.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IWindowManager",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/IWindowManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/IWindowManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RenderScript",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/RenderScript.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/RenderScript.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SurfaceControl",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/SurfaceControl.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/SurfaceControl.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ThreadedRenderer",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/ThreadedRenderer.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/ThreadedRenderer.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "WindowManagerGlobal",
+      "package": "mirror.android.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/view/WindowManagerGlobal.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/view/WindowManagerGlobal.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IWebViewUpdateService",
+      "package": "mirror.android.webkit",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/webkit/IWebViewUpdateService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/webkit/IWebViewUpdateService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "WebViewFactory",
+      "package": "mirror.android.webkit",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/webkit/WebViewFactory.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/webkit/WebViewFactory.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "RemoteViews",
+      "package": "mirror.android.widget",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/widget/RemoteViews.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/widget/RemoteViews.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Toast",
+      "package": "mirror.android.widget",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/android/widget/Toast.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/android/widget/Toast.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "R_Hide",
+      "package": "mirror.com.android.internal",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/R_Hide.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/R_Hide.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAppOpsService",
+      "package": "mirror.com.android.internal.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/app/IAppOpsService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/app/IAppOpsService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IBatteryStats",
+      "package": "mirror.com.android.internal.app",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/app/IBatteryStats.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/app/IBatteryStats.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IAppWidgetService",
+      "package": "mirror.com.android.internal.appwidget",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/appwidget/IAppWidgetService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/appwidget/IAppWidgetService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "NativeLibraryHelper",
+      "package": "mirror.com.android.internal.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/content/NativeLibraryHelper.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/content/NativeLibraryHelper.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ReferrerIntent",
+      "package": "mirror.com.android.internal.content",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/content/ReferrerIntent.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/content/ReferrerIntent.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IDropBoxManagerService",
+      "package": "mirror.com.android.internal.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/os/IDropBoxManagerService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/os/IDropBoxManagerService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IVibratorService",
+      "package": "mirror.com.android.internal.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/os/IVibratorService.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/os/IVibratorService.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "UserManager",
+      "package": "mirror.com.android.internal.os",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/os/UserManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/os/UserManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "SystemHealthManager",
+      "package": "mirror.com.android.internal.os.health",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/os/health/SystemHealthManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/os/health/SystemHealthManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PhoneWindow",
+      "package": "mirror.com.android.internal.policy",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/policy/PhoneWindow.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/policy/PhoneWindow.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IMms",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/IMms.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/IMms.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IPhoneSubInfo",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/IPhoneSubInfo.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/IPhoneSubInfo.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ISms",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ISms.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ISms.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ISub",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ISub.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ISub.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ITelephony",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ITelephony.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ITelephony.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ITelephonyRegistry",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ITelephonyRegistry.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/ITelephonyRegistry.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "PhoneConstantsMtk",
+      "package": "mirror.com.android.internal.telephony",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/PhoneConstantsMtk.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/telephony/PhoneConstantsMtk.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "IInputMethodManager",
+      "package": "mirror.com.android.internal.view",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/view/IInputMethodManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/view/IInputMethodManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "InputMethodManager",
+      "package": "mirror.com.android.internal.view.inputmethod",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/com/android/internal/view/inputmethod/InputMethodManager.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/com/android/internal/view/inputmethod/InputMethodManager.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "VMRuntime",
+      "package": "mirror.dalvik.system",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/dalvik/system/VMRuntime.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/dalvik/system/VMRuntime.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ThreadGroup",
+      "package": "mirror.java.lang",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/java/lang/ThreadGroup.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/java/lang/ThreadGroup.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ThreadGroupN",
+      "package": "mirror.java.lang",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/java/lang/ThreadGroupN.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/java/lang/ThreadGroupN.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ForwardingOs",
+      "package": "mirror.libcore.io",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/libcore/io/ForwardingOs.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/libcore/io/ForwardingOs.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Libcore",
+      "package": "mirror.libcore.io",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/libcore/io/Libcore.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/libcore/io/Libcore.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "Os",
+      "package": "mirror.libcore.io",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/libcore/io/Os.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/libcore/io/Os.java",
+      "docLink": "/reference/mirror/"
+    },
+    {
+      "className": "ApplicationConfig",
+      "package": "mirror.android.security.net.config",
+      "module": "mirror",
+      "sourcePath": "VirtualApp/lib/src/main/java/mirror/mirror/android/security/net/config/ApplicationConfig.java",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/java/mirror/mirror/android/security/net/config/ApplicationConfig.java",
+      "docLink": "/reference/mirror/"
+    }
+  ],
+  "nativeClasses": [
+    {
+      "fileName": "And64InlineHook.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/A64Inlinehook/And64InlineHook.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/A64Inlinehook/And64InlineHook.cpp"
+    },
+    {
+      "fileName": "And64InlineHook.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/A64Inlinehook/And64InlineHook.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/A64Inlinehook/And64InlineHook.hpp"
+    },
+    {
+      "fileName": "IOUniformer.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/IOUniformer.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/IOUniformer.cpp"
+    },
+    {
+      "fileName": "IOUniformer.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/IOUniformer.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/IOUniformer.h"
+    },
+    {
+      "fileName": "Path.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/Path.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/Path.cpp"
+    },
+    {
+      "fileName": "Path.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/Path.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/Path.h"
+    },
+    {
+      "fileName": "SandboxFs.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/SandboxFs.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/SandboxFs.cpp"
+    },
+    {
+      "fileName": "SandboxFs.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/SandboxFs.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/SandboxFs.h"
+    },
+    {
+      "fileName": "SymbolFinder.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/SymbolFinder.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/SymbolFinder.cpp"
+    },
+    {
+      "fileName": "SymbolFinder.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/SymbolFinder.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/SymbolFinder.h"
+    },
+    {
+      "fileName": "VMPatch.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/VMPatch.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/VMPatch.cpp"
+    },
+    {
+      "fileName": "VMPatch.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/VMPatch.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/VMPatch.h"
+    },
+    {
+      "fileName": "fake_dlfcn.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/fake_dlfcn.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/fake_dlfcn.cpp"
+    },
+    {
+      "fileName": "fake_dlfcn.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Foundation/fake_dlfcn.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Foundation/fake_dlfcn.h"
+    },
+    {
+      "fileName": "Helper.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Jni/Helper.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Jni/Helper.h"
+    },
+    {
+      "fileName": "VAJni.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Jni/VAJni.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Jni/VAJni.cpp"
+    },
+    {
+      "fileName": "VAJni.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Jni/VAJni.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Jni/VAJni.h"
+    },
+    {
+      "fileName": "Buffer.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/Buffer.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/Buffer.hpp"
+    },
+    {
+      "fileName": "CydiaSubstrate.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/CydiaSubstrate.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/CydiaSubstrate.h"
+    },
+    {
+      "fileName": "SubstrateARM.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateARM.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateARM.hpp"
+    },
+    {
+      "fileName": "SubstrateDebug.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateDebug.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateDebug.cpp"
+    },
+    {
+      "fileName": "SubstrateDebug.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateDebug.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateDebug.hpp"
+    },
+    {
+      "fileName": "SubstrateHook.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateHook.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateHook.cpp"
+    },
+    {
+      "fileName": "SubstrateHook.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateHook.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateHook.h"
+    },
+    {
+      "fileName": "SubstrateLog.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateLog.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateLog.hpp"
+    },
+    {
+      "fileName": "SubstratePosixMemory.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstratePosixMemory.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstratePosixMemory.cpp"
+    },
+    {
+      "fileName": "SubstrateX86.hpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/SubstrateX86.hpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/SubstrateX86.hpp"
+    },
+    {
+      "fileName": "hde64.c",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/hde64.c",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/hde64.c"
+    },
+    {
+      "fileName": "hde64.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/hde64.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/hde64.h"
+    },
+    {
+      "fileName": "table64.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/Substrate/table64.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/Substrate/table64.h"
+    },
+    {
+      "fileName": "assert.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/assert.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/assert.cpp"
+    },
+    {
+      "fileName": "ALog.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/ALog.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/ALog.h"
+    },
+    {
+      "fileName": "Build.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/Build.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/Build.h"
+    },
+    {
+      "fileName": "Countable.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/Countable.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/Countable.h"
+    },
+    {
+      "fileName": "Environment.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/Environment.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/Environment.h"
+    },
+    {
+      "fileName": "ProgramLocation.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/ProgramLocation.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/ProgramLocation.h"
+    },
+    {
+      "fileName": "RefPtr.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/RefPtr.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/RefPtr.h"
+    },
+    {
+      "fileName": "StaticInitialized.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/StaticInitialized.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/StaticInitialized.h"
+    },
+    {
+      "fileName": "ThreadLocal.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/ThreadLocal.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/ThreadLocal.h"
+    },
+    {
+      "fileName": "assert.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/assert.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/assert.h"
+    },
+    {
+      "fileName": "Boxed.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Boxed.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Boxed.h"
+    },
+    {
+      "fileName": "ByteBuffer.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ByteBuffer.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ByteBuffer.h"
+    },
+    {
+      "fileName": "Common.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Common.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Common.h"
+    },
+    {
+      "fileName": "Context.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Context.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Context.h"
+    },
+    {
+      "fileName": "CoreClasses-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/CoreClasses-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/CoreClasses-inl.h"
+    },
+    {
+      "fileName": "CoreClasses.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/CoreClasses.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/CoreClasses.h"
+    },
+    {
+      "fileName": "Exceptions.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Exceptions.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Exceptions.h"
+    },
+    {
+      "fileName": "File.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/File.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/File.h"
+    },
+    {
+      "fileName": "Hybrid.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Hybrid.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Hybrid.h"
+    },
+    {
+      "fileName": "Iterator-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Iterator-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Iterator-inl.h"
+    },
+    {
+      "fileName": "Iterator.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Iterator.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Iterator.h"
+    },
+    {
+      "fileName": "JThread.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/JThread.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/JThread.h"
+    },
+    {
+      "fileName": "JWeakReference.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/JWeakReference.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/JWeakReference.h"
+    },
+    {
+      "fileName": "Meta-forward.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta-forward.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta-forward.h"
+    },
+    {
+      "fileName": "Meta-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta-inl.h"
+    },
+    {
+      "fileName": "Meta.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Meta.h"
+    },
+    {
+      "fileName": "MetaConvert.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/MetaConvert.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/MetaConvert.h"
+    },
+    {
+      "fileName": "NativeRunnable.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/NativeRunnable.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/NativeRunnable.h"
+    },
+    {
+      "fileName": "ReferenceAllocators-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ReferenceAllocators-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ReferenceAllocators-inl.h"
+    },
+    {
+      "fileName": "ReferenceAllocators.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ReferenceAllocators.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/ReferenceAllocators.h"
+    },
+    {
+      "fileName": "References-forward.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References-forward.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References-forward.h"
+    },
+    {
+      "fileName": "References-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References-inl.h"
+    },
+    {
+      "fileName": "References.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/References.h"
+    },
+    {
+      "fileName": "Registration-inl.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Registration-inl.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Registration-inl.h"
+    },
+    {
+      "fileName": "Registration.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Registration.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/Registration.h"
+    },
+    {
+      "fileName": "TypeTraits.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/TypeTraits.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni/TypeTraits.h"
+    },
+    {
+      "fileName": "fbjni.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/fbjni.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/fbjni.h"
+    },
+    {
+      "fileName": "log.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/log.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/log.h"
+    },
+    {
+      "fileName": "lyra.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/lyra.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/lyra.h"
+    },
+    {
+      "fileName": "noncopyable.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/noncopyable.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/noncopyable.h"
+    },
+    {
+      "fileName": "nonmovable.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/nonmovable.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/nonmovable.h"
+    },
+    {
+      "fileName": "visibility.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/fb/visibility.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/fb/visibility.h"
+    },
+    {
+      "fileName": "Countable.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/Countable.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/Countable.h"
+    },
+    {
+      "fileName": "GlobalReference.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/GlobalReference.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/GlobalReference.h"
+    },
+    {
+      "fileName": "JniTerminateHandler.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/JniTerminateHandler.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/JniTerminateHandler.h"
+    },
+    {
+      "fileName": "LocalReference.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/LocalReference.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/LocalReference.h"
+    },
+    {
+      "fileName": "LocalString.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/LocalString.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/LocalString.h"
+    },
+    {
+      "fileName": "Registration.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/Registration.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/Registration.h"
+    },
+    {
+      "fileName": "WeakReference.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/WeakReference.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/WeakReference.h"
+    },
+    {
+      "fileName": "jni_helpers.h",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/include/jni/jni_helpers.h",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/include/jni/jni_helpers.h"
+    },
+    {
+      "fileName": "ByteBuffer.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/ByteBuffer.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/ByteBuffer.cpp"
+    },
+    {
+      "fileName": "Countable.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/Countable.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/Countable.cpp"
+    },
+    {
+      "fileName": "Environment.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/Environment.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/Environment.cpp"
+    },
+    {
+      "fileName": "Exceptions.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/Exceptions.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/Exceptions.cpp"
+    },
+    {
+      "fileName": "Hybrid.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/Hybrid.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/Hybrid.cpp"
+    },
+    {
+      "fileName": "LocalString.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/LocalString.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/LocalString.cpp"
+    },
+    {
+      "fileName": "OnLoad.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/OnLoad.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/OnLoad.cpp"
+    },
+    {
+      "fileName": "References.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/References.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/References.cpp"
+    },
+    {
+      "fileName": "WeakReference.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/WeakReference.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/WeakReference.cpp"
+    },
+    {
+      "fileName": "CpuCapabilities.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/android/CpuCapabilities.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/android/CpuCapabilities.cpp"
+    },
+    {
+      "fileName": "ReferenceChecking.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/android/ReferenceChecking.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/android/ReferenceChecking.cpp"
+    },
+    {
+      "fileName": "fbjni.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/fbjni.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/fbjni.cpp"
+    },
+    {
+      "fileName": "jni_helpers.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/jni/jni_helpers.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/jni/jni_helpers.cpp"
+    },
+    {
+      "fileName": "log.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/log.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/log.cpp"
+    },
+    {
+      "fileName": "lyra.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/lyra/lyra.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/lyra/lyra.cpp"
+    },
+    {
+      "fileName": "onload.cpp",
+      "sourcePath": "VirtualApp/lib/src/main/jni/fb/onload.cpp",
+      "sourceUrl": "https://github.com/android-security-engineer/VirtualXposed-skills/blob/vxp/VirtualApp/lib/src/main/jni/fb/onload.cpp"
     }
   ]
 }
